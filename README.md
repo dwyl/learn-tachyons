@@ -9,7 +9,9 @@ Tachyons is a css framework to craft beautiful, responsive & fast UIs with minim
 
 Tachyons embraces a different style than many popular css frameworks known as `Functional CSS`. But how is it different?
 
-Here's a some CSS for a bootstrap `primary` button
+Here's a some CSS for a bootstrap `primary` button:
+
+![btn](https://cloud.githubusercontent.com/assets/14013616/20070844/eec73158-a519-11e6-9011-5b8cc14f73ac.png)
 
 ```css
 .btn-primary {
@@ -40,9 +42,6 @@ Here's a some CSS for a bootstrap `primary` button
   border-radius: 4px;
 }
 ```
-Looks like this:
-
-![btn](https://cloud.githubusercontent.com/assets/14013616/20070844/eec73158-a519-11e6-9011-5b8cc14f73ac.png)
 
 What a monolith! There's a lot of CSS attributes there; Bootstrap is quite opinionated about how a button should look and function.
 
@@ -210,12 +209,23 @@ $ cd tachyons
 $ npm install
 ```
 
+Make the changes that you'd like to the css files and then run
+
+```sh
+$ npm run build
+```
+
+This will output both an unminified and minified css file to the `/css` directory
+
+Check out [this video](https://vimeo.com/174698456) for a guide to setting up.
+
 ### Resources
 
 + [Tachyons.io](http://tachyons.io/)
 + [Tachyons Table of Styles](http://tachyons.io/docs/table-of-styles/) : http://tachyons.io/docs/table-of-styles/
 + [Tachyons Github Repo](https://github.com/tachyons-css/tachyons/) : https://github.com/tachyons-css/tachyons/
 + [Tachyons Verbose Version](https://github.com/tachyons-css/tachyons-display-verbose) : https://github.com/tachyons-css/tachyons-display-verbose
++ [Setting up Custom Tachyons Build](https://vimeo.com/174698456)
 
 #### Articles
 
