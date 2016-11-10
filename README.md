@@ -40,11 +40,11 @@ Here's a some CSS for a bootstrap `primary` button
   border-radius: 4px;
 }
 ```
-Looks like this: ![btn](https://cloud.githubusercontent.com/assets/14013616/20070844/eec73158-a519-11e6-9011-5b8cc14f73ac.png)
+Looks like this:
 
-Whoa, what a monolith!
+![btn](https://cloud.githubusercontent.com/assets/14013616/20070844/eec73158-a519-11e6-9011-5b8cc14f73ac.png)
 
-There's a lot of CSS attributes there! Bootstrap seems quite opinionated about how a button should look and function.
+What a monolith! There's a lot of CSS attributes there; Bootstrap is quite opinionated about how a button should look and function.
 
 What if we wanted a button that looks a little different? We'd most likely need to add another class:
 
@@ -91,7 +91,7 @@ Let's have a look at some of the core features and ideas of `Functional CSS` and
 
 ### Functional :innocent:
 
-Small, clear, easy to read classes that are easy to apply and do one thing. Having small classes means it's easy to make a set of consistent spacing and type rules - you end up forcing a beautiful type scale & rhythm on your design :heart_eyes:.
+Small, clear, easy to read classes that are easy to apply and do one thing. Having small classes means it's easy to make a set of consistent spacing and type rules - you end up forcing a beautiful type scale & rhythm on your design.
 
 > "Good design (my preferred school of good design, at least) is mathsy, rational and pure —and CSS is design— so it follows that there are a bunch of lessons we can bring back from FP land into design." - [Jon Gold](http://www.jon.gold/2015/07/functional-css/)
 
@@ -135,13 +135,10 @@ And what if we wanted to change it? Do we change our "monolithic" button classes
 
 ![lol](https://media1.giphy.com/media/sjfefACqq2BUc/200_s.gif)
 
-Be realistic, we're more likely to add more and more classes to avoid this from happening. This gets more and more wasteful over time, adding bloat to our CSS files:
+Be realistic, we're likely to add more and more classes to avoid this from happening. This gets more and more wasteful over time, adding bloat to our CSS files:
 
 > In [the monolith] model, you will never stop writing css. Refactoring css is hard and time consuming. Deleting unused css is hard and time consuming. And more often than not - it’s not work people are excited to do. So what happens? People keep writing more and more css - [Adam Morse](http://mrmrs.io/writing/2016/03/24/scalable-css/).
 
-Using immutable styles also seems to encourages a more natural workflow when building UIs
-
-> Styles are localized at the HTML template level, rather than being controlled by central CSS files. This fits my workflow because I usually work through a website's design one page at time...
 
 ## Why Tachyons?
 
@@ -167,17 +164,29 @@ for example the "padding all 4" class `pa4` also has 3 other versions:
 
 `ns`, `m`, and `l` are short for "not small", "medium" and "large"
 
-Tachyons gives you incredible flexibility to change your design at different screen sizes. And by default the "non suffixed" class **is** the mobile class! This encourages you to design for mobile first and expand outwards. All of this without writing a line of css!
+Tachyons gives you incredible flexibility to change your design at different screen sizes. And by default the "non suffixed" class **is** the mobile class! This encourages you to design for mobile first and expand outwards. All of this without writing a line of css! Tachyons has the referential transparency of inline styles coupled with the power of media queries!
+
+### A Natural Workflow
+
+Using Tachyon's styles in this way also seems to encourages a more natural workflow when building UIs
+
+> Styles are localized at the HTML template level, rather than being controlled by central CSS files. This fits my workflow because I usually work through a website's design one page at time... - [Jason Li](http://notebook.hongkonggong.com/2016/04/21/is-tachyons-the-right-css-framework-for-me/)
+
+Jason Li illustrates this perfectly:
+
+![tachyonsexplanationnow](https://cloud.githubusercontent.com/assets/14013616/20149576/d5bae650-a6a9-11e6-87b2-dcb65f1dc882.png)
+
+![tachyonsexplanationbefore](https://cloud.githubusercontent.com/assets/14013616/20149566/caf62b80-a6a9-11e6-95a9-f06af3e8413f.png)
+
+### Works well with component based UIs
+
+Using a templating engine or framework (such as `Rails`, `React`, `Elm`, `Angular`) means you can reduce the repetition of classes in your html by reusing them as components.
 
 ### Great Performance that Scales
 
 As your project grows larger, your stylesheet doesn't (or only grows very minimally). This has benefits for the user as there's less CSS to download and the browser has to register less styles overall (it can cache the result of already computed styles).
 
 > "Inline styles are 1 to 1 for the browser. i.e an inline style can only style one element at a time. While a class has a 1 to many relationship. This has non-trivial deltas in rendering speed and can greatly reduce jank in a complicated ui." - [Adam Morse](https://github.com/tachyons-css/tachyons/issues/12)
-
-### Works well with component based UIs
-
-Using a templating engine or framework (such as `Rails`, `React`, `Elm`, `Angular`) means you can reduce the repetition of classes in your html by reusing them as components.
 
 ## How?
 
