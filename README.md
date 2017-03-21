@@ -1,5 +1,7 @@
 # Learn Tachyons
-[Help Wanted!] Learn how to use Tachyons to craft beautiful, responsive &amp; fast UI with minimal CSS!
+
+Learn how to use Tachyons to craft beautiful, responsive,
+functional and fast UI with minimal CSS!
 
 ## What?
 
