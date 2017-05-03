@@ -1,15 +1,70 @@
 # Learn Tachyons
+![tachyons-logo](https://cloud.githubusercontent.com/assets/194400/23000323/f3886b8c-f3d7-11e6-880f-3ed39521c786.png)
 
-Learn how to use Tachyons to craft beautiful, responsive,
-functional and fast UI with minimal CSS!
+_**Learn** how to use **Tachyons**
+to **craft beautiful, 100% responsive, <br />
+functional** and **fast User Interface/Experience** (UI/UX)
+with **minimal CSS**_!
+
+## _Why_?
+
+The User Interface (UI) or User Experience (UX)
+is the part of your application that
+the ***people*** ("_end users_")
+_**see** and **interact** with_.
+Ensuring that the **UI/UX** is the _**best** it **can be**_,
+is _easily_ the ***top priority*** for our Web/Mobile projects.
+
+Without ~~good~~ ***great UI/UX***
+["_**nothing `else` matters**_"](https://youtu.be/tAGnKpE4NCI)
+to the person _using_ your app.
+The **UI/UX** is what _**matters**_,
+**not** the **programming language**,
+what type of **server**,
+which "***front-end framework***"
+or "**backend infrastructure**" you are using;
+***Nobody cares*** about the "_boring technical details_",
+they care about their own _experience_ using the it.
+
+### _30 Second Summary_
+
+Through _experience_
+(_building **many web/mobile** apps large and small
+  in teams ranging from 2 - **200 people**_),
+we have found that:
++ _**Hand-writing CSS**_ is _**tedious** and **repetitive**_
++ Using (_most_) CSS "_frameworks_" results in:
+  + Lots of **Duplication** _where people re-create styles over-and-over_
+  + "**_Zombie_ Code**" _unused styles that nobody will risk removing_
+  + **Bloated** apps/sites that take _much_ longer
+  to develop, load and maintain than they _neeD_ to.
++ **_Functional_ CSS** _ensures_:
+  + UI is **100% _Predictable_, Consistent**
+  and _free from_ (_unwanted_) "***Side Effects***"
+  (_where a change in one place "breaks" something else!_)
+  + It is ***immdeiately clear*** from reading ***one***
+  block of code what the component _does_ and what it looks like.
+  + **_Updates_** to UI are made in ***One Place/File***. (_see diagram below_)
+**Time** to _develop_ your App's UI ***scales proportionally***
+  instead of increasing ***exponentially*** the way it does
+
+Tachyons is a "_feature complete_" CSS System that has ***all***
+the ***building blocks*** <br />
+you (_your team_) need(s) to
+[_build **anything** you can **imagine**_](https://youtu.be/Um-PlX6oPBQ?t=12s
+  "The LEGO Movie Scene "I am a Master Builder!").
+
+
 
 ## What?
 
 ![tachyons](https://cloud.githubusercontent.com/assets/14013616/20138900/0c07e07a-a67b-11e6-80a2-a0ff6b335712.jpg)
 
-Tachyons is a css framework to craft beautiful, responsive & fast UIs with minimal CSS!
+Tachyons is a **CSS _Design System_** anyone can learn/use
+to craft beautiful, responsive & fast UIs with minimal CSS!
 
-Tachyons embraces a different style than many popular css frameworks known as `Functional CSS`. But how is it different?
+Tachyons embraces a different style than many popular CSS
+frameworks known as `Functional CSS`. But how is it different?
 
 Here's a some CSS for a bootstrap `primary` button:
 
@@ -242,3 +297,5 @@ Check out [this video](https://vimeo.com/174698456) for a guide to setting up.
 
 + [How is Tachyons different from inline styles?](https://github.com/tachyons-css/tachyons/issues/12) : https://github.com/tachyons-css/tachyons/issues/12
 + [What's so bad about inline css?](http://stackoverflow.com/questions/2612483/whats-so-bad-about-in-line-css) : http://stackoverflow.com/questions/2612483/whats-so-bad-about-in-line-css
+
+### Does My App _Need_ To Be "_Beautiful_" for People to Use it?
