@@ -1,5 +1,7 @@
 # Learn Tachyons
-![tachyons-logo](https://cloud.githubusercontent.com/assets/194400/23000323/f3886b8c-f3d7-11e6-880f-3ed39521c786.png)
+
+![tachyons-intro-image](https://cloud.githubusercontent.com/assets/194400/25710569/87726714-30e4-11e7-9532-4a447bd61629.png)
+
 
 _**Learn** how to use **Tachyons**
 to **craft beautiful, 100% responsive, <br />
@@ -57,8 +59,6 @@ you (_your team_) need(s) to
 
 
 ## What?
-
-![tachyons](https://cloud.githubusercontent.com/assets/14013616/20138900/0c07e07a-a67b-11e6-80a2-a0ff6b335712.jpg)
 
 Tachyons is a **CSS _Design System_** anyone can learn/use
 to craft beautiful, responsive & fast UIs with minimal CSS!
