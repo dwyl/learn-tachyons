@@ -34,7 +34,7 @@ Through _experience_
 (_building **many web/mobile** apps large and small
   in teams ranging from 2 - **200 people**_),
 we have found that:
-+ _**Hand-writing CSS**_ is _**tedious** and **repetitive**_
++ _**Hand-writing CSS**_ is _**time-consuming** and **repetitive**_
 + Using (_most_) CSS "_frameworks_" results in:
   + Lots of **Duplication** _where people re-create styles over-and-over_
   + "**_Zombie_ Code**" _unused styles that nobody will risk removing_
@@ -44,17 +44,14 @@ we have found that:
   + UI is **100% _Predictable_, Consistent**
   and _free from_ (_unwanted_) "***Side Effects***"
   (_where a change in one place "breaks" something else!_)
-  + It is ***immdeiately clear*** from reading ***one***
+  + It's ***immdeiately clear*** from reading ***one***
   block of code what the component _does_ and what it looks like.
   + **_Updates_** to UI are made in ***One Place/File***. (_see diagram below_)
-**Time** to _develop_ your App's UI ***scales proportionally***
-  instead of increasing ***exponentially*** the way it does
+  + **Time** to _develop_ your App's UI ***scales proportionally***
+  instead of increasing ***exponentially*** the way it does with
+  with most "traditional" CSS frameworks.
 
-Tachyons is a "_feature complete_" CSS System that has ***all***
-the ***building blocks*** <br />
-you (_your team_) need(s) to
-[_build **anything** you can **imagine**_](https://youtu.be/Um-PlX6oPBQ?t=12s
-  "The LEGO Movie Scene "I am a Master Builder!").
+[![image](https://cloud.githubusercontent.com/assets/194400/25718602/9a99b3be-30fe-11e7-9462-758cef9cbe1d.png)](https://twitter.com/iamdevloper/status/753716544949981184 "CSS is easy? - click to see original tweet")
 
 
 
@@ -64,9 +61,14 @@ you (_your team_) need(s) to
 
 Tachyons is a **CSS _Design System_** anyone can learn/use
 to craft beautiful, responsive & fast UIs with minimal CSS!
+Tachyons has ***all*** the ***building blocks***
+you (_your team_) need(s) to
+[_build **anything** you can **imagine**_](https://youtu.be/Um-PlX6oPBQ?t=12s "The LEGO Movie Scene "I am a Master Builder!")
 
 Tachyons embraces a different style than many popular CSS
-frameworks known as `Functional CSS`. But how is it different?
+frameworks known as `Functional CSS`.
+
+### What is _Different_?
 
 Here's a some CSS for a bootstrap `primary` button:
 
@@ -105,10 +107,11 @@ Visit: http://getbootstrap.com/css/#buttons inspect one of the buttons and see f
 ![image](https://cloud.githubusercontent.com/assets/194400/25717024/190df58a-30f9-11e7-8d14-522a3d3853a1.png "Twitter Bootstrap buttons - click to enlarge")
 
 
-
-What a monolith! There's a lot of CSS attributes there;
+What a monolith! There's a lot of CSS attributes there; <br />
 Bootstrap is quite ***opinionated*** about how a button should
 look and function.
+
+### _Bootstrap_ Custom Button (_The Old Way_!)
 
 What if we wanted a button that looks a little different?
 We'd most likely need to add another class. e.g:
@@ -131,7 +134,14 @@ Which requires us to write quite a lot of custom CSS:
 
 ![btn-dwyl](https://cloud.githubusercontent.com/assets/14013616/20138059/1501dfb4-a676-11e6-8c74-750b5be89d88.png)
 
-Tachyons approaches this with `single utility classes` (classes that do one thing). Change the `html`, not the `stylesheet`:
+### _Tachyons_ Custom Button (_New Way_!)
+
+Tachyons approaches this with `single utility classes`
+(classes that do one thing). <br />
+These `single utility classes` encourage
+a different way of building UI: <br />
+all code is in a single palce
+the `html`, not the `stylesheet`:
 
 ```html
 <button class="bw0 br2 bg-dwyl-teal pa2 white fw1 tc ttu tracked">do what you love</button>
@@ -150,7 +160,8 @@ Each class has one responsibility:
 
 see: `/examples/buttons.html`
 
-**Note**: Tachyons does not have _all_-the-colors, hence we had to define our one.
+**Note**: Tachyons does not have _all_-the-colors,
+hence we had to define our one.
 However given that there is a clear format for defining colors
 we defined our own as `bg-dwyl-teal`:
 ```css
