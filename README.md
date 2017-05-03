@@ -60,6 +60,8 @@ you (_your team_) need(s) to
 
 ## What?
 
+![what-section-header](https://cloud.githubusercontent.com/assets/194400/25712542/da21aace-30e9-11e7-98b1-b09848a62cbc.png)
+
 Tachyons is a **CSS _Design System_** anyone can learn/use
 to craft beautiful, responsive & fast UIs with minimal CSS!
 
