@@ -371,25 +371,45 @@ and can greatly reduce jank in a complicated ui." -
 
 ## _How_?
 
-
-
 ### Try _Before_ You Commit (3 Easy Steps)
 
-
+Getting started with Tachyons is as easy as 1, 2, 3!
 
 #### 1. Clone this Repository
 
+```sh
+git clone https://github.com/dwyl/learn-tachyons.git && learn-tachyons
+```
 
+#### 2. Open on of the Example `.html` files in your Web Browser
 
-#### 2. Open it in your Web Browser
+![button example](https://cloud.githubusercontent.com/assets/194400/25722656/cc897900-310c-11e7-8915-bda326cf7dca.png)
 
-
+See: `/examples`
 
 #### 3. Edit Some Code!
 
+In your Text Editor / IDE of choice,
+edit one of the classes:
+
+![button example red](https://cloud.githubusercontent.com/assets/194400/25722704/00d32c6a-310d-11e7-9065-1151a0d16e80.png)
 
 
+#### Optional: Install "Live Server" for "_Live Reloading_"
 
+If you prefer not to have to _manually_ refresh the page each time,
+simply run the following command:
+
+```
+npm install && npm start
+```
+This will download the dependency on `live-server`
+which will auto-open your `default` browser:
+
+![button example blue](https://cloud.githubusercontent.com/assets/194400/25722773/43fbe298-310d-11e7-812e-54ec8efcb350.png)
+
+
+e.g: http://localhost:8000/examples/buttons.html
 
 
 ### In your Own Project
