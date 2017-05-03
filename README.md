@@ -373,7 +373,22 @@ and can greatly reduce jank in a complicated ui." -
 
 
 
-### Try _Before_ You Commit
+### Try _Before_ You Commit (3 Easy Steps)
+
+
+
+#### 1. Clone this Repository
+
+
+
+#### 2. Open it in your Web Browser
+
+
+
+#### 3. Edit Some Code!
+
+
+
 
 
 
@@ -407,7 +422,7 @@ Make the changes that you'd like to the css files and then run
 $ npm run build
 ```
 
-This will output both an unminified
+This will output both an _unminified_
 and minified css file to the `/css` directory
 
 Check out [this video](https://vimeo.com/174698456)
