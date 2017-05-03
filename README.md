@@ -29,6 +29,8 @@ or "**backend infrastructure**" you are using;
 ***Nobody cares*** about the "_boring technical details_",
 they care about their own _experience_ using the it.
 
+![image](https://cloud.githubusercontent.com/assets/194400/25721528/adec307c-3108-11e7-8f66-10edae56e6f0.png)
+
 ### _30 Second Summary_
 
 Through _experience_
@@ -52,7 +54,7 @@ we have found that:
   instead of increasing ***exponentially*** the way it does with
   with most "traditional" CSS frameworks.
 
-Tachyons lets you avoid this:
+Tachyons lets you avoid the "_CSS Fire_":
 
 [![image](https://cloud.githubusercontent.com/assets/194400/25718602/9a99b3be-30fe-11e7-9462-758cef9cbe1d.png)](https://twitter.com/iamdevloper/status/753716544949981184 "CSS is easy? - click to see original tweet")
 
@@ -60,7 +62,8 @@ Tachyons lets you avoid this:
 
 ## What?
 
-![what-section-header](https://cloud.githubusercontent.com/assets/194400/25712542/da21aace-30e9-11e7-98b1-b09848a62cbc.png)
+![what-section-header](https://cloud.githubusercontent.com/assets/194400/25721712/64ec964a-3109-11e7-8395-05d928091c5c.png)
+
 
 Tachyons is a **CSS _Design System_** anyone can learn/use
 to craft beautiful, responsive & fast UIs with minimal CSS!
@@ -177,7 +180,8 @@ that we can _re-use_ for any elements that require the teal background.
 
 ### What is "_Functional_" CSS?
 
-![fcss](https://cloud.githubusercontent.com/assets/194400/25713667/64c64ac4-30ed-11e7-8962-86a773923549.png)
+![fcss](https://cloud.githubusercontent.com/assets/194400/25721674/33bc13ac-3109-11e7-89a6-b8f09f0f4417.png)
+
 
 
 You may be thinking:
@@ -365,13 +369,21 @@ This has non-trivial deltas in rendering speed
 and can greatly reduce jank in a complicated ui." -
 [Adam Morse](https://github.com/tachyons-css/tachyons/issues/12)
 
-## How?
+## _How_?
+
+
+
+### Try _Before_ You Commit
+
+
+
+### In your Own Project
 
 You can get up and running by just
 adding a link tag in your html
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/tachyons@4.5.4/css/tachyons.min.css">
+<link rel="stylesheet" href="https://unpkg.com/tachyons@4.7.0/css/tachyons.min.css">
 ```
 
 Or grab the latest version
@@ -380,7 +392,7 @@ Or grab the latest version
 <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
 ```
 
-If you want to customize the styles you can
+If you want to _customize_ the styles you can
 clone the tachyons repo locally and install the dependencies
 
 ```sh
@@ -428,7 +440,7 @@ for a guide to setting up.
 Watch Adam Morse (_creator of Tachyons_)
 describe the Future of Tachyons:
 
-[![future-of-tachyons](https://cloud.githubusercontent.com/assets/194400/25709019/085b636c-30e0-11e7-9da4-6bb77a9b33d5.png)](https://youtu.be/XX47atVcVZE?t=1h1m11s "Future of Tachyons Talk @dwyl HQ - Click to Watch!")
+[![future-of-tachyons](https://cloud.githubusercontent.com/assets/194400/25709019/085b636c-30e0-11e7-9da4-6bb77a9b33d5.png)](https://youtu.be/XX47atVcVZE?t=1h1m11s "Future of Tachyons Talk @dwyl HQ - Click to Watch!") <br />
 https://youtu.be/XX47atVcVZE?t=1h1m11s
 
 <!--
