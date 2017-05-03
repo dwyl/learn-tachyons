@@ -85,7 +85,7 @@ Here's a some CSS for a bootstrap `primary` button:
   margin-bottom: 0;
   font-size: 14px;
   font-weight: 400;
-  line-height: 1.42857143;
+  line-height: 1.42857143; /* who needs this level of decimal precision in CSS?! */
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
@@ -101,10 +101,22 @@ Here's a some CSS for a bootstrap `primary` button:
   border-radius: 4px;
 }
 ```
+Visit: http://getbootstrap.com/css/#buttons inspect one of the buttons and see for yourself:
+![image](https://cloud.githubusercontent.com/assets/194400/25717024/190df58a-30f9-11e7-8d14-522a3d3853a1.png "Twitter Bootstrap buttons - click to enlarge")
 
-What a monolith! There's a lot of CSS attributes there; Bootstrap is quite opinionated about how a button should look and function.
 
-What if we wanted a button that looks a little different? We'd most likely need to add another class:
+
+What a monolith! There's a lot of CSS attributes there;
+Bootstrap is quite ***opinionated*** about how a button should
+look and function.
+
+What if we wanted a button that looks a little different?
+We'd most likely need to add another class. e.g:
+
+```html
+<button type="button" class="btn btn-dwyl">do what you love</button>
+```
+Which requires us to write quite a lot of custom CSS:
 
 ```css
 .btn-dwyl {
@@ -122,20 +134,38 @@ What if we wanted a button that looks a little different? We'd most likely need 
 Tachyons approaches this with `single utility classes` (classes that do one thing). Change the `html`, not the `stylesheet`:
 
 ```html
-<button class="pa2 br2 bg-green tc tracked">do what you love</button>
+<button class="bw0 br2 bg-dwyl-teal pa2 white fw1 tc ttu tracked">do what you love</button>
 ```
 
 Each class has one responsibility:
-
++ `bw0` - "border width 0" see:
++ `br2` - "border radius 2" see:
++ `bg-dwyl-teal` - "background color dwyl teal" (_this is an example of a custom color_)
 + `pa2` - "padding all 2"
-+ `br2` - "border radius 2"
-+ `bg-green` - "background color green"
++ `white` - "text color white"
++ `fw1` - "font weight 1"
 + `tc` - "text align center"
++ `ttu` - "text transform uppercase"
 + `tracked` - "with letter spacing"
 
-## Why Functional CSS?
+see: `/examples/buttons.html`
 
-![fcss](https://cloud.githubusercontent.com/assets/14013616/20139391/cdeed714-a67d-11e6-9363-9b90749d3054.png)
+**Note**: Tachyons does not have _all_-the-colors, hence we had to define our one.
+However given that there is a clear format for defining colors
+we defined our own as `bg-dwyl-teal`:
+```css
+.bg-dwyl-teal {
+  background-color: #4DB6AC;
+}
+```
+This is "_OK_" because it's still a _single-purpose_ class
+which we can re-use for any elements that require the teal background.
+
+### What is "_Functional_" CSS?
+
+![fcss](https://cloud.githubusercontent.com/assets/194400/25713667/64c64ac4-30ed-11e7-8962-86a773923549.png)
+
+
 
 You may be thinking:
 + Just how does this make my CSS better?
@@ -304,7 +334,7 @@ Check out [this video](https://vimeo.com/174698456) for a guide to setting up.
 
 Watch Adam Morse (_creator of Tachyons_) describe the Future of Tachyons:
 
-[]![future-of-tachyons](https://cloud.githubusercontent.com/assets/194400/25709019/085b636c-30e0-11e7-9da4-6bb77a9b33d5.png)](https://youtu.be/XX47atVcVZE?t=1h1m11s "Future of Tachyons Talk")
+[![future-of-tachyons](https://cloud.githubusercontent.com/assets/194400/25709019/085b636c-30e0-11e7-9da4-6bb77a9b33d5.png)](https://youtu.be/XX47atVcVZE?t=1h1m11s "Future of Tachyons Talk @dwyl HQ - Click to Watch!")
 https://youtu.be/XX47atVcVZE?t=1h1m11s
 
 
