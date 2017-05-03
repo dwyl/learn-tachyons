@@ -298,4 +298,12 @@ Check out [this video](https://vimeo.com/174698456) for a guide to setting up.
 + [How is Tachyons different from inline styles?](https://github.com/tachyons-css/tachyons/issues/12) : https://github.com/tachyons-css/tachyons/issues/12
 + [What's so bad about inline css?](http://stackoverflow.com/questions/2612483/whats-so-bad-about-in-line-css) : http://stackoverflow.com/questions/2612483/whats-so-bad-about-in-line-css
 
+### Future of Tachyons
+
+Watch Adam Morse (_creator of Tachyons_) describe the Future of Tachyons:
+
+[]![future-of-tachyons](https://cloud.githubusercontent.com/assets/194400/25709019/085b636c-30e0-11e7-9da4-6bb77a9b33d5.png)](https://youtu.be/XX47atVcVZE?t=1h1m11s "Future of Tachyons Talk")
+https://youtu.be/XX47atVcVZE?t=1h1m11s
+
+
 ### Does My App _Need_ To Be "_Beautiful_" for People to Use it?
