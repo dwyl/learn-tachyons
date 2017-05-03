@@ -58,7 +58,9 @@ Tachyons lets you avoid the "_CSS Fire_":
 
 [![image](https://cloud.githubusercontent.com/assets/194400/25718602/9a99b3be-30fe-11e7-9462-758cef9cbe1d.png)](https://twitter.com/iamdevloper/status/753716544949981184 "CSS is easy? - click to see original tweet")
 
-
+> Extended discussion on the pros/cons of
+Functional CSS and Tachyons:
+https://github.com/dwyl/learn-tachyons/issues/1
 
 ## What?
 
