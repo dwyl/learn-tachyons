@@ -1,0 +1,32 @@
+{
+  "name": "learn-tachyons",
+  "description": "Learn how to use Tachyons to craft beautiful, responsive, functional and fast UI with minimal CSS!",
+  "version": "4.6.1",
+  "homepage": "https://github.com/dwyl/learn-tachyons",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dwyl/learn-tachyons.git"
+  },
+  "author": "Andrew MacMurray @andrewMacmurray, @dwyl & friends!",
+  "devDependencies": {
+    "live-server": "^1.2.0"
+  },
+  "scripts": {
+    "start": "live-server --port=8000"
+  },
+  "keywords": [
+    "mobile first",
+    "beautiful",
+    "functional",
+    "fast",
+    "CSS",
+    "style",
+    "styles",
+    "learn",
+    "beginner",
+    "tutorial",
+    "how to"
+  ],
+  "license": "ISC"
+}
