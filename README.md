@@ -2,7 +2,6 @@
 
 ![tachyons-intro-image](https://cloud.githubusercontent.com/assets/194400/25710569/87726714-30e4-11e7-9532-4a447bd61629.png)
 
-
 _**Learn** how to use **Tachyons**
 to **craft beautiful, 100% responsive,
 functional** and **fast User Interface/Experience** (UI/UX)
@@ -20,14 +19,14 @@ is _easily_ the ***top priority*** for our Web/Mobile projects.
 
 Without ~~good~~ ***great UI/UX***
 ["_**nothing `else` matters**_"](https://youtu.be/tAGnKpE4NCI)
-to the person _using_ your app.
+to the person _using_ your app. <br />
 The **UI/UX** is what _**matters**_,
 **not** the **programming language**,
 what type of **server**,
 which "***front-end framework***"
 or "**backend infrastructure**" you are using;
 ***Nobody cares*** about the "_boring technical details_",
-they care about their own _experience_ using the it.
+they _only_ care about their **own _experience_** using the app/website.
 
 ![image](https://cloud.githubusercontent.com/assets/194400/25721528/adec307c-3108-11e7-8f66-10edae56e6f0.png)
 
@@ -35,9 +34,9 @@ they care about their own _experience_ using the it.
 
 Through _experience_
 (_building **many web/mobile** apps large and small
-  in teams ranging from 2 - **200 people**_),
+  in teams ranging from 2 - **200 people**_), <br />
 we have found that:
-+ _**Hand-writing CSS**_ is _**time-consuming** and **repetitive**_
++ _**Hand-writing CSS**_ is _very **time-consuming** and **repetitive**_!
 + Using (_most_) CSS "_frameworks_" results in:
   + Lots of **Duplication** _where people re-create styles over-and-over_
   + "**_Zombie_ Code**" _unused styles that nobody will risk removing_
@@ -53,28 +52,32 @@ we have found that:
   + **Time** to _develop_ your App's UI ***scales proportionally***
   instead of increasing ***exponentially*** the way it does with
   with most "traditional" CSS frameworks.
+  + The moment you want anything "_custom_" most CSS frameworks
+  let you down _badly_ because you have to "_override_",
+  Tachyons is _made_ for helping you to use your imagination!
+  The resulting UI will be ***much less code***,
+  load ***considerably faster*** and be ***far easier to maintain***!
 
 Tachyons lets you avoid the "_CSS Fire_":
 
 [![image](https://cloud.githubusercontent.com/assets/194400/25718602/9a99b3be-30fe-11e7-9462-758cef9cbe1d.png)](https://twitter.com/iamdevloper/status/753716544949981184 "CSS is easy? - click to see original tweet")
 
 > Extended discussion on the pros/cons of
-Functional CSS and Tachyons:
+Functional CSS & Tachyons: <br />
 https://github.com/dwyl/learn-tachyons/issues/1
 
 ## What?
 
 ![what-section-header](https://cloud.githubusercontent.com/assets/194400/25721712/64ec964a-3109-11e7-8395-05d928091c5c.png)
 
-
 Tachyons is a **CSS _Design System_** anyone can learn/use
 to craft beautiful, responsive & fast UIs with minimal CSS!
 Tachyons has ***all*** the ***building blocks***
 you (_your team_) need(s) to
-[_build **anything** you can **imagine**_](https://youtu.be/Um-PlX6oPBQ?t=12s "The LEGO Movie Scene "I am a Master Builder!").
+[_build **anything** you can **imagine**_](https://youtu.be/Um-PlX6oPBQ?t=12s "The LEGO Movie Scene: I am a Master Builder!").
 
 Tachyons embraces a different style than many popular CSS
-frameworks known as `Functional CSS`.
+frameworks known as "***Functional CSS***".
 
 ### What is _Different_?
 
@@ -111,11 +114,13 @@ Here's a some CSS for a bootstrap `primary` button:
   border-radius: 4px;
 }
 ```
-Visit: http://getbootstrap.com/css/#buttons inspect one of the buttons and see for yourself:
+Visit: http://getbootstrap.com/css/#buttons
+(_open your "dev tools"_) then inspect one of the buttons
+and see for yourself:
 ![image](https://cloud.githubusercontent.com/assets/194400/25717024/190df58a-30f9-11e7-8d14-522a3d3853a1.png "Twitter Bootstrap buttons - click to enlarge")
 
 
-What a monolith! There's a lot of CSS attributes there; <br />
+What a _monolith_! There are a _lot_ of CSS attributes there; <br />
 Bootstrap is quite ***opinionated*** about how a button should
 look and function.
 
