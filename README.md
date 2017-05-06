@@ -153,7 +153,7 @@ Tachyons approaches this with `single utility classes`
 (classes that do one thing). <br />
 These `single utility classes` encourage
 a different way of building UI: <br />
-all code is in a single palce
+all code is in a single place
 the `html`, not the `stylesheet`:
 
 ```html
