@@ -218,8 +218,7 @@ good design, at least) is **mathsy**,
 **rational** and **pure** —and CSS is design— so it
 follows that there are a bunch of lessons
 we can bring back from FP land into design_." -
-[Jon Gold](http://www.jon.gold/2015/07/functional-
-css) Front-End Wizard @ AirBnB
+[Jon Gold](http://www.jon.gold/2015/07/functional-css) Front-End Wizard @ AirBnB
 
 ### Composable :musical_score: :notes: :musical_keyboard:
 
