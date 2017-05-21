@@ -46,7 +46,7 @@ we have found that:
   + UI is **100% _Predictable_, Consistent**
   and _free from_ (_unwanted_) "***Side Effects***"
   (_where a change in one place "breaks" something else!_)
-  + It's ***immdeiately clear*** from reading ***one***
+  + It's ***immediately clear*** from reading ***one***
   block of code what the component _does_ and what it looks like.
   + **_Updates_** to UI are made in ***One Place/File***. (_see diagram below_)
   + **Time** to _develop_ your App's UI ***scales proportionally***
@@ -196,21 +196,21 @@ You may be thinking:
 + Why use this approach when CSS has been written
 like the bootstrap example for years?
 + Isn't this just like using inline styles? ([considered by many to be bad practice in CSS](http://stackoverflow.com/questions/2612483/whats-so-bad-about-in-line-css))
-+ Won't I end up _repeating myself_ in the html?
++ Won't I end up _repeating myself_ in the HTML?
 
 Let's have a look at some of the core features
 and ideas of `Functional CSS` and see if we can
-answer some of those questions:
+answer some of those questions.
 
 ## Functional CSS is:
 
 ### Functional :innocent:
 
 Small, clear, easy to read classes that
-are easy to apply and do one thing. <br />
+are easy to apply and do _one_ thing. <br />
 Having small classes means it's easy to make
-a set of consistent spacing and type
-rules - you end up forcing a beautiful type
+a set of **consistent spacing and type
+rules** - you end up forcing a beautiful type
 scale & rhythm on your design.
 
 > "_**Good design** (my preferred school of
@@ -222,7 +222,7 @@ we can bring back from FP land into design_." -
 
 ### Composable :musical_score: :notes: :musical_keyboard:
 
-In Functional Programming you combine (or compose) a bunch of tiny functions together to do bigger things (like lots of notes to make music!). You end up reusing a lot of your code which is great for performance and consistency! Just like the button example:
+In Functional Programming you combine (or compose) a bunch of tiny functions together to do bigger things (like lots of notes to make music!). You end up reusing a lot of your code which is great for **performance and consistency**! Just like the button example:
 
 ```html
 <button class="pa2 br2 bg-green tc tracked"> <!--VS--> <button class="btn btn-dwyl">
@@ -241,7 +241,7 @@ Be green! Recycle your classes!
 In Functional languages declaring a property
 means it will never get overwritten,
 something known as `Immutability` -
-i.e It can't ever be changed (_or `mutated`_).
+i.e it can't ever be changed (_or `mutated`_).
 A huge benefit you gain from  immutability is
 that code is easier to reason about
 (_you **don't have to** go on a **hunt** to find where
@@ -249,14 +249,14 @@ something might have been changed_).
 
 CSS on the other hand is _inherently **mutable**_
 (it's the "C" in CSS - the `Cascade`)!
-But because `fcss` classes are `single responsibility`,
+But because `fcss` (functional CSS) classes are `single responsibility`,
 they aren't at risk of overriding each other.
 This almost eliminates the problems of the cascade
-(Changing a property somewhere won't break your code elsewhere).
+(changing a property somewhere won't break your code elsewhere).
 
 Another extremely useful property you gain
 from immutability is something called
-**Referential Transparency** : In other words:
+**Referential Transparency**. In other words:
 A thing does exactly what it says on the tin!
 
 We know with a fair amount of confidence what
@@ -266,7 +266,7 @@ our button will look like just from reading the classes:
 <button class="pa2 br2 bg-green tc tracked">
 ```
 
-but for all we know our `.btn` & `.btn-dwyl` classes could look like:
+but with `.btn` & `.btn-dwyl` classes, for all we know our button could look like:
 
 ![questionable](https://cloud.githubusercontent.com/assets/14013616/20143859/88f29ac8-a692-11e6-9980-012d3c5d1738.png)
 
@@ -339,7 +339,7 @@ of inline styles coupled with the power of media queries!
 ### A Natural Workflow
 
 Using Tachyon's styles in this way also seems
-to encourages a more natural workflow when building UIs
+to encourage a more natural workflow when building UIs.
 
 > Styles are localized at the HTML template level,
 rather than being controlled by central CSS files.
@@ -379,7 +379,9 @@ and can greatly reduce jank in a complicated ui." -
 
 ### Try _Before_ You Commit (3 Easy Steps)
 
-Getting started with Tachyons is as easy as 1, 2, 3!
+Getting started with Tachyons is as easy as 1, 2, 3!     
+We've created some examples for you to play around with
+before you decide to use it on your own projects.
 
 #### 1. Clone this Repository
 
@@ -387,7 +389,7 @@ Getting started with Tachyons is as easy as 1, 2, 3!
 git clone https://github.com/dwyl/learn-tachyons.git && learn-tachyons
 ```
 
-#### 2. Open on of the Example `.html` files in your Web Browser
+#### 2. Open one of the Example `.html` files in your web browser
 
 ![button example](https://cloud.githubusercontent.com/assets/194400/25722656/cc897900-310c-11e7-8915-bda326cf7dca.png)
 
