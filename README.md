@@ -336,6 +336,17 @@ All of this without writing a line of css!
 Tachyons has the referential transparency
 of inline styles coupled with the power of media queries!
 
+### Accessibility
+Tachyons cares about accessibility!    
+Not only does the documentation actively encourage accessibility
+by providing things like [accessible colour combinations](http://tachyons.io/docs/themes/skins/),
+but whenever a release includes functionality that can cause
+some accessibility issues, it comes with a :warning:
+[warning to ensure everyone is aware](https://github.com/tachyons-css/tachyons/releases/tag/4.7.0)
+of the appropriate usage. :heart:
+
+> :warning: For quite some time people have been requesting an additional step in the type scale for 12px / .75rem. While 12px isn't readable for body copy it does have it's place in limited usage so I've added it to core. :warning:
+
 ### A Natural Workflow
 
 Using Tachyon's styles in this way also seems
