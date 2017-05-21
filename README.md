@@ -376,6 +376,7 @@ This has non-trivial deltas in rendering speed
 and can greatly reduce jank in a complicated ui." -
 [Adam Morse](https://github.com/tachyons-css/tachyons/issues/12)
 
+
 ## _How_?
 
 ### Try _Before_ You Commit (3 Easy Steps)
@@ -501,6 +502,35 @@ through to `fw9` (corresponding to `font-weight: 900;`) are available.
 
 #### [Text alignment](http://tachyons.io/docs/typography/text-align/)
 `tl` aligns text left, `tc` centers it and `tr` aligns it to the right.
+
+### Layout
+
+#### [Padding and Margins](http://tachyons.io/docs/layout/spacing/)
+Tachyons bases all of its spacing on a specific ratio that provides a much more
+**effortless consistency in spacing across devices**, giving you a much higher
+propensity for things to line up or to at least look harmonious.
+
+Padding and margins both follow the same convention to create their 3 letter
+classnames (e.g. `pa4` or `mb2`):
++ _First character:_ `p` or `m`: each classname starts with one of these to denote 'padding' or
+'margin'
++ _Second character:_ `a` (all - adds padding or margin to top, bottom, left and right),
+`h` (horizontal - adds padding or margin to left and right),
+`v` (vertical - adds padding or margin to top and bottom),
+`t` (top - adds padding or margin only to the top),
+`r`  (right), `b` (bottom), `l` (left)
++ _Third character:_ a number from `0` to `7`
+
+#### [Floating](http://tachyons.io/docs/layout/floats/)
+
+Float left (`fl`), float right (`fr`) and float none (`fn`) are available and
+sets them to [block-level elements](https://developer.mozilla.org/en/docs/Web/HTML/Block-level_elements).
+
+Because floats are removed from the flow of the page, remember that to force an
+element to contain its floated children (i.e. the elements inside it), you'll
+need to apply a [clearfix](http://tachyons.io/docs/layout/clearfix/) - in tachyons
+you give the parent element the class `cf`.
+
 
 
 
