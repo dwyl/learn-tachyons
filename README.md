@@ -195,7 +195,8 @@ You may be thinking:
 + How _exactly_ does this make my CSS better?
 + Why use this approach when CSS has been written
 like the bootstrap example for years?
-+ Isn't this just like using inline styles? ([considered by many to be bad practice in CSS](http://stackoverflow.com/questions/2612483/whats-so-bad-about-in-line-css))
++ Isn't this just like using inline styles?
+([considered by many to be bad practice in CSS](http://stackoverflow.com/questions/2612483/whats-so-bad-about-in-line-css))
 + Won't I end up _repeating myself_ in the HTML?
 
 Let's have a look at some of the core features
@@ -455,6 +456,53 @@ and minified css file to the `/css` directory
 
 Check out [this video](https://vimeo.com/174698456)
 for a guide to setting up.
+
+## Learning the ropes
+The [Tachyons documentation](http://tachyons.io/docs/) is _fantastic_ as
+reference material, incredibly well thought out, readable and easy to search
+once you know what you want to do.
+
+But if you just want to play around with tachyons and _get a feel for the
+thinking behind it_, you'll find some well-used options below to get you started.
+
+### Responsive modifiers
+Tachyons includes _modifiers_ which can be added onto the end of _any_ class
+and will set up your media queries as shown [above](#mobile-first-responsive-design).
+
+`ns` covers everything above mobile size, `m` covers roughly tablets, and `l`
+covers roughly desktop sizes.
+
+### Typography
+The first place to start when designing is to set a [type scale](http://spencermortensen.com/articles/typographic-scale/)
+so that you can _guarantee_ a harmonious progression of font sizes (from 'body
+copy' to 'headlines') across your application or site - tachyons has this
+**built in**!
+
+Tachyons also includes `.sans-serif` and `.serif` which each have a set of
+appropriate font family fallbacks.
+
+#### [Font size](http://tachyons.io/docs/typography/scale/)
+Aside from standard `f1` - `f6` sizes (`f7` was introduced in [tachyons 4.7.0](https://github.com/tachyons-css/tachyons/releases/tag/4.7.0))
+but is not recommended for extensive use), `f-headline` and `f-subheadline` can
+also be used for larger text requirements (usually for print).
+
+#### [Line Height](http://tachyons.io/docs/typography/line-height/)  
+An agreeable line height promotes readability and tachyons offers 3 options
+titled according to their most usual uses:
++ `lh-copy` with a line height of 1.5
++ `lh-title` with a line height of 1.25
++ `lh-solid` fixes line height to 1
+
+#### [Font weight and style](http://tachyons.io/docs/typography/font-weight/)
+Aside from `normal` and`b` for _bold_, `fw1` (corresponding to `font-weight: 100;`)
+through to `fw9` (corresponding to `font-weight: 900;`) are available.
+
+`i` can also be used for an italics font style.
+
+#### [Text alignment](http://tachyons.io/docs/typography/text-align/)
+`tl` aligns text left, `tc` centers it and `tr` aligns it to the right.
+
+
 
 ### Resources
 
