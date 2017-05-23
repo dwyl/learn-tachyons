@@ -505,11 +505,11 @@ through to `fw9` (corresponding to `font-weight: 900;`) are available.
 
 ### Layout
 
-#### [Padding and Margins](http://tachyons.io/docs/layout/spacing/)
-Tachyons bases all of its spacing on a specific ratio that provides a much more
+Tachyons bases all of its [spacing on a specific ratio](http://tachyons.io/docs/layout/spacing/) that provides a much more
 **effortless consistency in spacing across devices**, giving you a much higher
 propensity for things to line up or to at least look harmonious.
 
+#### [Padding and Margins](http://tachyons.io/docs/layout/spacing/)
 Padding and margins both follow the same convention to create their 3 letter
 classnames (e.g. `pa4` or `mb2`):
 + _First character:_ `p` or `m`: each classname starts with one of these to denote 'padding' or
@@ -524,12 +524,45 @@ classnames (e.g. `pa4` or `mb2`):
 #### [Floating](http://tachyons.io/docs/layout/floats/)
 
 Float left (`fl`), float right (`fr`) and float none (`fn`) are available and
-sets them to [block-level elements](https://developer.mozilla.org/en/docs/Web/HTML/Block-level_elements).
+sets elements to [block-level elements](https://developer.mozilla.org/en/docs/Web/HTML/Block-level_elements).
 
 Because floats are removed from the flow of the page, remember that to force an
 element to contain its floated children (i.e. the elements inside it), you'll
 need to apply a [clearfix](http://tachyons.io/docs/layout/clearfix/) - in tachyons
 you give the parent element the class `cf`.
+
+#### [Display](http://tachyons.io/docs/layout/display/)
+A simple set of classes that follow a similar naming convention to what should now be very familiar to you, e.g. `dib` for `{display : inline-block}` or `dn` for `{display: none}`.
+
+There are also a set of display classes for table and table related display properties, which you can find in detail in the documentation with great examples.
+
+### [Widths](http://tachyons.io/docs/layout/widths/)
+Widths are denoted by the `w` class, followed by one of 3 types of _modifiers_:
++ _Numbers scale_ which follows tachyons' powers of two scale mentioned above
+  + Starting at `w1` (1rem) to `w5`(16rem)
+  + e.g. `w1` sets the width of the element to the first step in the width
+  scale (1rem) whereas `w4` sets the width to the fourth step (8rem)
++ _Percentage literals_
+  + Starting at `w-10` for `10%` and going up in 10s (e.g. `w-20`, `w-30`, etc)
+  until `w-100`
++ _Percentages_ (not supported in Opera mini or IE8 as these are calculations)
+  + `w-third`, `w-two-thirds` and `w-auto`
+
+**Max widths** are denoted by `mw` and support the _numbers scale_ above
+(e.g. `mw-1` to `mw-10`) as well as `mw-100` (100%) or `mw-none`.
+
+### [Heights](http://tachyons.io/docs/layout/heights/)
+Heights are denoted by the `h` class, followed by one of 3 types of _modifiers_:
++ _Numbers scale_ which follows tachyons' powers of two scale mentioned above
+  + Starting at `h1` (1rem) to `h5`(16rem)
+  + e.g. `w1` sets the width of the element to the first step in the width
+  scale (1rem) whereas `w4` sets the width to the fourth step (8rem)
++ _Percentage literals_
+  + Starting at `h-25` for `25%` and going up in 25s (e.g. `h-50`, etc) until `h-100`
++ _Values_
+  + `auto` and `inherit`
+
+
 
 
 
