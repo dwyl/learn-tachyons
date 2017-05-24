@@ -466,6 +466,10 @@ once you know what you want to do.
 But if you just want to play around with tachyons and _get a feel for the
 thinking behind it_, you'll find some well-used options below to get you started.
 
+Once you start to get an understanding for how tachyons works,
+we've found thei [table of styles](http://tachyons.io/docs/table-of-styles/)
+to be a very useful reference point.
+
 ### Responsive modifiers
 Tachyons includes _modifiers_ which can be added onto the end of _any_ class
 and will set up your media queries as shown [above](#mobile-first-responsive-design).
@@ -479,7 +483,7 @@ so that you can _guarantee_ a harmonious progression of font sizes (from 'body
 copy' to 'headlines') across your application or site - tachyons has this
 **built in**!
 
-Tachyons also includes `.sans-serif` and `.serif` which each have a set of
+Tachyons also [includes `.sans-serif` and `.serif`](http://tachyons.io/docs/typography/font-family/) which each have a set of
 appropriate font family fallbacks.
 
 #### [Font size](http://tachyons.io/docs/typography/scale/)
@@ -562,9 +566,54 @@ Heights are denoted by the `h` class, followed by one of 3 types of _modifiers_:
 + _Values_
   + `auto` and `inherit`
 
+### [Position](http://tachyons.io/docs/layout/position/)
+Elements are naturally statically positioned, but tachyons also support `.absolute` for absolute positioning and `.relative` for relative positioning.
 
+For positioning of the elements, tachyons provides classes for
+2rem, 1rem, 0, -1rem and -2rem, using the following format plus the number
+(which can all be used with the media breakpoint modifiers at the end):
++ `top-` e.g. `top-0` (for `{top: 0}`) or `top-2`
++ `right-` e.g. `right--1` (for `{right: -1}`, note the additional dash here) or `right-1`
++ `bottom-` e.g. `bottom--2`
++ `left-` e.g. `left-1`
 
+## Theming
 
+Tachyons comes with a number of [pre-defined colours](http://tachyons.io/docs/themes/skins/) which you can use by themselves to denote _font_ colour or preface with `bg-` to give an element a _background_ colour (e.g. `bg-red`).
+
+### [Hovers](http://tachyons.io/docs/themes/hovers/)
+There are quite a few hover states available, the basic being:
++ `dim` fades elements or text to 50% opacity on hover
++ `glow` brightens elements or text to 100% opacity on hover
++ `underline-hover` underlines elements or text on hover
++ `grow` makes elements scale by 5% of its size on hover
+
+If you're looking for a specific effect, please read the _code_ at the bottom of the docs as there are more!
+
+### [Background size](http://tachyons.io/docs/themes/background-size/)
+Background size allows an image to either:
++ fill its containing element (possibly showing only part of the image if it is bigger than the containing element)
+using `cover`
++ be displayed in its entirety (possibly leaving a portion of the containing element blank if this is wider or taller than the image)
+using `contain`
+
+### [Borders](http://tachyons.io/docs/themes/borders/)
+Borders follow the same familiar pattern: `ba` for all 4 borders of the element, `bt` for the top border, `br` for the bottom border and so on.
+
+The interesting part is that tachyons offers:
++ Border radius:
+  + from `br0` (no radius) to `br5` (1rem)
+  + `br-pill` to obtain a pill-shaped element
+  + `br-100` for the 100% border radius to obtain a circular element
++ Border widths: from `bw1` (the thinnest) to `bw5` (the thickest)
++ Border styles (which can be combined with all other border properties):
+  + `b--dashed`
+  + `b--dotted`
+
+### [Opacity](http://tachyons.io/docs/themes/opacity/)
+Opacity mostly follows a linear pattern `0-` with a number decrementing in multiples of 10: `o-90` (90% opacity), `o-80` (80% opacity) and so on.
+
+In addition, tachyons offers: `o-05`, `o-025` and `o-0`.
 
 
 ### Resources
