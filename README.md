@@ -195,7 +195,8 @@ You may be thinking:
 + How _exactly_ does this make my CSS better?
 + Why use this approach when CSS has been written
 like the bootstrap example for years?
-+ Isn't this just like using inline styles? ([considered by many to be bad practice in CSS](http://stackoverflow.com/questions/2612483/whats-so-bad-about-in-line-css))
++ Isn't this just like using inline styles?
+([considered by many to be bad practice in CSS](http://stackoverflow.com/questions/2612483/whats-so-bad-about-in-line-css))
 + Won't I end up _repeating myself_ in the HTML?
 
 Let's have a look at some of the core features
@@ -386,6 +387,7 @@ This has non-trivial deltas in rendering speed
 and can greatly reduce jank in a complicated ui." -
 [Adam Morse](https://github.com/tachyons-css/tachyons/issues/12)
 
+
 ## _How_?
 
 ### Try _Before_ You Commit (3 Easy Steps)
@@ -466,6 +468,164 @@ and minified css file to the `/css` directory
 
 Check out [this video](https://vimeo.com/174698456)
 for a guide to setting up.
+
+## Learning the ropes
+The [Tachyons documentation](http://tachyons.io/docs/) is _fantastic_ as
+reference material, incredibly well thought out, readable and easy to search
+once you know what you want to do.
+
+But if you just want to play around with tachyons and _get a feel for the
+thinking behind it_, you'll find some well-used options below to get you started.
+
+Once you start to get an understanding for how tachyons works,
+we've found thei [table of styles](http://tachyons.io/docs/table-of-styles/)
+to be a very useful reference point.
+
+### Responsive modifiers
+Tachyons includes _modifiers_ which can be added onto the end of _any_ class
+and will set up your media queries as shown [above](#mobile-first-responsive-design).
+
+`ns` covers everything above mobile size, `m` covers roughly tablets, and `l`
+covers roughly desktop sizes.
+
+### Typography
+The first place to start when designing is to set a [type scale](http://spencermortensen.com/articles/typographic-scale/)
+so that you can _guarantee_ a harmonious progression of font sizes (from 'body
+copy' to 'headlines') across your application or site - tachyons has this
+**built in**!
+
+Tachyons also [includes `.sans-serif` and `.serif`](http://tachyons.io/docs/typography/font-family/) which each have a set of
+appropriate font family fallbacks.
+
+#### [Font size](http://tachyons.io/docs/typography/scale/)
+Aside from standard `f1` - `f6` sizes (`f7` was introduced in [tachyons 4.7.0](https://github.com/tachyons-css/tachyons/releases/tag/4.7.0))
+but is not recommended for extensive use), `f-headline` and `f-subheadline` can
+also be used for larger text requirements (usually for print).
+
+#### [Line Height](http://tachyons.io/docs/typography/line-height/)  
+An agreeable line height promotes readability and tachyons offers 3 options
+titled according to their most usual uses:
++ `lh-copy` with a line height of 1.5
++ `lh-title` with a line height of 1.25
++ `lh-solid` fixes line height to 1
+
+#### [Font weight and style](http://tachyons.io/docs/typography/font-weight/)
+Aside from `normal` and`b` for _bold_, `fw1` (corresponding to `font-weight: 100;`)
+through to `fw9` (corresponding to `font-weight: 900;`) are available.
+
+`i` can also be used for an italics font style.
+
+#### [Text alignment](http://tachyons.io/docs/typography/text-align/)
+`tl` aligns text left, `tc` centers it and `tr` aligns it to the right.
+
+### Layout
+
+Tachyons bases all of its [spacing on a specific ratio](http://tachyons.io/docs/layout/spacing/) that provides a much more
+**effortless consistency in spacing across devices**, giving you a much higher
+propensity for things to line up or to at least look harmonious.
+
+#### [Padding and Margins](http://tachyons.io/docs/layout/spacing/)
+Padding and margins both follow the same convention to create their 3 letter
+classnames (e.g. `pa4` or `mb2`):
++ _First character:_ `p` or `m`: each classname starts with one of these to denote 'padding' or
+'margin'
++ _Second character:_ `a` (all - adds padding or margin to top, bottom, left and right),
+`h` (horizontal - adds padding or margin to left and right),
+`v` (vertical - adds padding or margin to top and bottom),
+`t` (top - adds padding or margin only to the top),
+`r`  (right), `b` (bottom), `l` (left)
++ _Third character:_ a number from `0` to `7`
+
+#### [Floating](http://tachyons.io/docs/layout/floats/)
+
+Float left (`fl`), float right (`fr`) and float none (`fn`) are available and
+sets elements to [block-level elements](https://developer.mozilla.org/en/docs/Web/HTML/Block-level_elements).
+
+Because floats are removed from the flow of the page, remember that to force an
+element to contain its floated children (i.e. the elements inside it), you'll
+need to apply a [clearfix](http://tachyons.io/docs/layout/clearfix/) - in tachyons
+you give the parent element the class `cf`.
+
+#### [Display](http://tachyons.io/docs/layout/display/)
+A simple set of classes that follow a similar naming convention to what should now be very familiar to you, e.g. `dib` for `{display : inline-block}` or `dn` for `{display: none}`.
+
+There are also a set of display classes for table and table related display properties, which you can find in detail in the documentation with great examples.
+
+### [Widths](http://tachyons.io/docs/layout/widths/)
+Widths are denoted by the `w` class, followed by one of 3 types of _modifiers_:
++ _Numbers scale_ which follows tachyons' powers of two scale mentioned above
+  + Starting at `w1` (1rem) to `w5`(16rem)
+  + e.g. `w1` sets the width of the element to the first step in the width
+  scale (1rem) whereas `w4` sets the width to the fourth step (8rem)
++ _Percentage literals_
+  + Starting at `w-10` for `10%` and going up in 10s (e.g. `w-20`, `w-30`, etc)
+  until `w-100`
++ _Percentages_ (not supported in Opera mini or IE8 as these are calculations)
+  + `w-third`, `w-two-thirds` and `w-auto`
+
+**Max widths** are denoted by `mw` and support the _numbers scale_ above
+(e.g. `mw-1` to `mw-10`) as well as `mw-100` (100%) or `mw-none`.
+
+### [Heights](http://tachyons.io/docs/layout/heights/)
+Heights are denoted by the `h` class, followed by one of 3 types of _modifiers_:
++ _Numbers scale_ which follows tachyons' powers of two scale mentioned above
+  + Starting at `h1` (1rem) to `h5`(16rem)
+  + e.g. `w1` sets the width of the element to the first step in the width
+  scale (1rem) whereas `w4` sets the width to the fourth step (8rem)
++ _Percentage literals_
+  + Starting at `h-25` for `25%` and going up in 25s (e.g. `h-50`, etc) until `h-100`
++ _Values_
+  + `auto` and `inherit`
+
+### [Position](http://tachyons.io/docs/layout/position/)
+Elements are naturally statically positioned, but tachyons also support `.absolute` for absolute positioning and `.relative` for relative positioning.
+
+For positioning of the elements, tachyons provides classes for
+2rem, 1rem, 0, -1rem and -2rem, using the following format plus the number
+(which can all be used with the media breakpoint modifiers at the end):
++ `top-` e.g. `top-0` (for `{top: 0}`) or `top-2`
++ `right-` e.g. `right--1` (for `{right: -1}`, note the additional dash here) or `right-1`
++ `bottom-` e.g. `bottom--2`
++ `left-` e.g. `left-1`
+
+## Theming
+
+Tachyons comes with a number of [pre-defined colours](http://tachyons.io/docs/themes/skins/) which you can use by themselves to denote _font_ colour or preface with `bg-` to give an element a _background_ colour (e.g. `bg-red`).
+
+### [Hovers](http://tachyons.io/docs/themes/hovers/)
+There are quite a few hover states available, the basic being:
++ `dim` fades elements or text to 50% opacity on hover
++ `glow` brightens elements or text to 100% opacity on hover
++ `underline-hover` underlines elements or text on hover
++ `grow` makes elements scale by 5% of its size on hover
+
+If you're looking for a specific effect, please read the _code_ at the bottom of the docs as there are more!
+
+### [Background size](http://tachyons.io/docs/themes/background-size/)
+Background size allows an image to either:
++ fill its containing element (possibly showing only part of the image if it is bigger than the containing element)
+using `cover`
++ be displayed in its entirety (possibly leaving a portion of the containing element blank if this is wider or taller than the image)
+using `contain`
+
+### [Borders](http://tachyons.io/docs/themes/borders/)
+Borders follow the same familiar pattern: `ba` for all 4 borders of the element, `bt` for the top border, `br` for the bottom border and so on.
+
+The interesting part is that tachyons offers:
++ Border radius:
+  + from `br0` (no radius) to `br5` (1rem)
+  + `br-pill` to obtain a pill-shaped element
+  + `br-100` for the 100% border radius to obtain a circular element
++ Border widths: from `bw1` (the thinnest) to `bw5` (the thickest)
++ Border styles (which can be combined with all other border properties):
+  + `b--dashed`
+  + `b--dotted`
+
+### [Opacity](http://tachyons.io/docs/themes/opacity/)
+Opacity mostly follows a linear pattern `0-` with a number decrementing in multiples of 10: `o-90` (90% opacity), `o-80` (80% opacity) and so on.
+
+In addition, tachyons offers: `o-05`, `o-025` and `o-0`.
+
 
 ### Resources
 
