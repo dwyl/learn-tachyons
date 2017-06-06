@@ -399,7 +399,7 @@ before you decide to use it on your own projects.
 #### 1. Clone this Repository
 
 ```sh
-git clone https://github.com/dwyl/learn-tachyons.git && learn-tachyons
+git clone https://github.com/dwyl/learn-tachyons.git && cd learn-tachyons
 ```
 
 #### 2. Open one of the Example `.html` files in your web browser
