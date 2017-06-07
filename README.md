@@ -622,7 +622,7 @@ The interesting part is that tachyons offers:
   + `b--dotted`
 
 ### [Opacity](http://tachyons.io/docs/themes/opacity/)
-Opacity mostly follows a linear pattern `0-` with a number decrementing in multiples of 10: `o-90` (90% opacity), `o-80` (80% opacity) and so on.
+Opacity mostly follows a linear pattern `o-` with a number decrementing in multiples of 10: `o-90` (90% opacity), `o-80` (80% opacity) and so on.
 
 In addition, tachyons offers: `o-05`, `o-025` and `o-0`.
 
