@@ -15,10 +15,15 @@
     }
     </style>
     <pre class="prettyprint bw0" style="border: none !important;">
-      &#x3C;button class=&#x22;bw0 br2 bg-blue pv2 ph3 white fw1 tc ttu tracked&#x22;&#x3E;
+      &#x3C;button class=&#x22;<span class="class-output"></span>&#x22;&#x3E;
       do what you love
       &#x3C;/button&#x3E;
     </pre>
     <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+    <script type="text/javascript">
+      const classes = document.querySelector('button').classList.toString();
+      const output = document.querySelector('.class-output');
+      output.innerHTML = classes;
+    </script>
   </body>
 </html>
