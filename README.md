@@ -74,7 +74,7 @@ we have found that:
   + Lots of **Duplication** _where people re-create styles over-and-over_
   + "**_Zombie_ Code**" _unused styles that nobody will risk removing_
   + **Bloated** apps/sites that take _much_ longer
-  to develop, load and maintain than they _neeD_ to.
+  to develop, load and maintain than they _need_ to.
 + **_Functional_ CSS** _ensures_:
   + UI is **100% _Predictable_, Consistent**
   and _free from_ (_unwanted_) "***Side Effects***"
@@ -325,7 +325,7 @@ Deleting unused css is hard and time consuming.
 And more often than not - it’s not work people
 are excited to do. So what happens?
 People keep writing more and more css -
-[Adam Morse](http://mrmrs.io/writing/2016/03/24/scalable-css/).
+[Adam Morse](http://mrmrs.github.io/writing/2016/03/24/scalable-css/).
 
 
 ## Why Tachyons?
@@ -371,7 +371,7 @@ Tachyons has the referential transparency
 of inline styles coupled with the power of media queries!
 
 ### Accessibility
-Tachyons cares about accessibility!    
+Tachyons cares about accessibility!
 Not only does the documentation actively encourage accessibility
 by providing things like [accessible colour combinations](http://tachyons.io/docs/themes/skins/),
 but whenever a release includes functionality that can cause
@@ -425,7 +425,7 @@ and can greatly reduce jank in a complicated ui." -
 
 ### Try _Before_ You Commit (3 Easy Steps)
 
-Getting started with Tachyons is as easy as 1, 2, 3!     
+Getting started with Tachyons is as easy as 1, 2, 3!
 We've created some examples for you to play around with
 before you decide to use it on your own projects.
 
@@ -472,7 +472,7 @@ You can get up and running by just
 adding a link tag in your html
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/tachyons@4.7.0/css/tachyons.min.css">
+<link rel="stylesheet" href="https://unpkg.com/tachyons@4.8.1/css/tachyons.min.css">
 ```
 
 Or grab the latest version
@@ -535,7 +535,7 @@ Aside from standard `f1` - `f6` sizes (`f7` was introduced in [tachyons 4.7.0](h
 but is not recommended for extensive use), `f-headline` and `f-subheadline` can
 also be used for larger text requirements (usually for print).
 
-#### [Line Height](http://tachyons.io/docs/typography/line-height/)  
+#### [Line Height](http://tachyons.io/docs/typography/line-height/)
 An agreeable line height promotes readability and tachyons offers 3 options
 titled according to their most usual uses:
 + `lh-copy` with a line height of 1.5
@@ -670,7 +670,7 @@ In addition, tachyons offers: `o-05`, `o-025` and `o-0`.
 
 ### Articles
 
-+ [CSS and Scalability](http://mrmrs.io/writing/2016/03/24/scalable-css/)
++ [CSS and Scalability](http://mrmrs.github.io/writing/2016/03/24/scalable-css/)
 + [Functional Programming, CSS, and your Sanity](http://www.jon.gold/2015/07/functional-css/) : http://www.jon.gold/2015/07/functional-css/
 + [Rationalizing Functional CSS](https://marcelosomers.com/writing/rationalizing-functional-css/) : https://marcelosomers.com/writing/rationalizing-functional-css/
 + [Building and Shipping Functional CSS](https://blog.colepeters.com/building-and-shipping-functional-css/) : https://blog.colepeters.com/building-and-shipping-functional-css/
