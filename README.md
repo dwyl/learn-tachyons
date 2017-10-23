@@ -84,7 +84,7 @@ we have found that:
   + **_Updates_** to UI are made in ***One Place/File***. (_see diagram below_)
   + **Time** to _develop_ your App's UI ***scales proportionally***
   instead of increasing ***exponentially*** the way it does with
-  with most "traditional" CSS frameworks.
+  most "traditional" CSS frameworks.
   + The moment you want anything "_custom_" most CSS frameworks
   let you down _badly_ because you have to "_override_",
   Tachyons is _made_ for helping you to use your imagination!
