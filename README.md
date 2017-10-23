@@ -603,8 +603,8 @@ Widths are denoted by the `w` class, followed by one of 3 types of _modifiers_:
 Heights are denoted by the `h` class, followed by one of 3 types of _modifiers_:
 + _Numbers scale_ which follows tachyons' powers of two scale mentioned above
   + Starting at `h1` (1rem) to `h5`(16rem)
-  + e.g. `w1` sets the width of the element to the first step in the width
-  scale (1rem) whereas `w4` sets the width to the fourth step (8rem)
+  + e.g. `h1` sets the height of the element to the first step in the 
+  height scale (1rem) whereas `h4` sets the height to the fourth step (8rem)
 + _Percentage literals_
   + Starting at `h-25` for `25%` and going up in 25s (e.g. `h-50`, etc) until `h-100`
 + _Values_
@@ -642,7 +642,7 @@ using `cover`
 using `contain`
 
 #### [Borders](http://tachyons.io/docs/themes/borders/)
-Borders follow the same familiar pattern: `ba` for all 4 borders of the element, `bt` for the top border, `br` for the bottom border and so on.
+Borders follow the same familiar pattern: `ba` for all 4 borders of the element, `bt` for the top border, `br` for the right border and so on.
 
 The interesting part is that tachyons offers:
 + Border radius:
