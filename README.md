@@ -207,7 +207,7 @@ Each class has one responsibility:
 see: `/examples/buttons.html`
 
 **Note**: Tachyons does not have _all_-the-colors,
-hence we had to define our one.
+hence we had to define our own.
 However given that there is a clear format for defining colors
 we defined our own as `bg-dwyl-teal`:
 ```css
