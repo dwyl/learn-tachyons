@@ -511,7 +511,7 @@ But if you just want to play around with tachyons and _get a feel for the
 thinking behind it_, you'll find some well-used options below to get you started.
 
 Once you start to get an understanding for how tachyons works,
-we've found thei [table of styles](http://tachyons.io/docs/table-of-styles/)
+we've found the [table of styles](http://tachyons.io/docs/table-of-styles/)
 to be a very useful reference point.
 
 ### Responsive modifiers
@@ -531,7 +531,7 @@ Tachyons also [includes `.sans-serif` and `.serif`](http://tachyons.io/docs/typo
 appropriate font family fallbacks.
 
 #### [Font size](http://tachyons.io/docs/typography/scale/)
-Aside from standard `f1` - `f6` sizes (`f7` was introduced in [tachyons 4.7.0](https://github.com/tachyons-css/tachyons/releases/tag/4.7.0))
+Aside from standard `f1` - `f6` sizes (`f7` was introduced in [tachyons 4.7.0](https://github.com/tachyons-css/tachyons/releases/tag/4.7.0),
 but is not recommended for extensive use), `f-headline` and `f-subheadline` can
 also be used for larger text requirements (usually for print).
 
