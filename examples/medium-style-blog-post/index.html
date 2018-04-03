@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Medium Style Blog Post</title>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.1/css/tachyons.min.css"/>
+</head>
+
+<body class="serif w-100 z-5">
+
+<header class="sans-serif top-0 block sticky h3 bg-white bb b--light-gray all-animate">
+
+  <div class="flex items-center mw8 h3 ph3 center">
+    <!-- Upgrade button -->
+    <div class="flex items-center h-100 z-1">
+      <button type="button"
+        class="sans-serif f6 link black-70 pointer nowrap ba br2 b--black-20 hover-b--gray bg-white pv2 ph3 dn di-ns all-animate">
+        Upgrade
+      </button>
+    </div>
+
+    <!-- Medium wordmark -->
+    <div class="absolute-ns left-0-ns right-0-ns flex items-center h-100">
+      <svg width="128" height="75px" viewbox="0 0 380 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="js-toggle pointer center w4 h-100">
+        <title>Wordmark_Black</title>
+        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <g fill-rule="nonzero" fill="#1C1B1A">
+            <path d="M191.928482,66.6288007 C191.928482,67.9487769 191.928482,68.2487715 192.818551,69.0587569 L197.802936,73.9786684 L197.802936,74.1886646 L175.699563,74.1886646 L175.699563,64.7388347 C173.475,70.9670062 167.591489,75.0855802 161.043098,74.99865 C149.679888,74.99865 141.431918,65.998812 141.431918,49.4391101 C141.431918,33.9293893 150.332605,23.5795756 162.823235,23.5795756 C168.359961,23.2271589 173.512213,26.4516048 175.669894,31.6194308 L175.669894,10.7698061 C175.834098,9.80429336 175.443304,8.82804709 174.661149,8.2498515 L169.914116,3.62993466 L169.914116,3.41993844 L191.928482,0.80998542 L191.928482,66.6288007 Z M175.699563,63.6288547 L175.699563,32.5194146 C174.097736,30.5075743 171.667037,29.3561834 169.113054,29.3994708 C163.742973,29.3994708 158.550906,34.3193822 158.550906,48.9291193 C158.550906,62.608873 163.030918,67.4387861 168.608682,67.4387861 C171.436762,67.3802651 174.068954,65.9659878 175.699563,63.6288547 Z M206.584947,74.1886646 L206.584947,32.1894206 C206.726382,31.2515229 206.391912,30.3045749 205.694878,29.6694659 L200.7995,24.5695577 L200.7995,24.3595615 L222.902873,24.3595615 L222.902873,66.9587947 C222.902873,68.278771 222.902873,68.5787656 223.792942,69.388751 L228.658651,74.0086678 L228.658651,74.218664 L206.584947,74.1886646 Z M205.783885,8.999838 C205.783885,4.02936472 209.768858,9.13061129e-16 214.684572,0 C219.600286,-9.13061129e-16 223.585259,4.02936472 223.585259,8.999838 C223.585259,13.9703113 219.600286,17.999676 214.684572,17.999676 C209.768858,17.999676 205.783885,13.9703113 205.783885,8.999838 L205.783885,8.999838 Z M282.537477,66.5388023 C282.537477,67.8587785 282.537477,68.2487715 283.427545,69.0587569 L288.41193,73.9786684 L288.41193,74.1886646 L266.189881,74.1886646 L266.189881,63.4188584 C264.166309,70.2285903 258.001416,74.9189552 250.969706,74.99865 C241.119613,74.99865 235.838538,67.7387807 235.838538,53.999028 C235.838538,47.3691473 235.838538,40.109278 236.046221,31.9494249 C236.208991,31.0360127 235.868084,30.1053085 235.156152,29.5194686 L230.260775,24.5695577 L230.260775,24.3595615 L252.186134,24.3595615 C252.186134,24.6595561 252.186134,50.4290923 252.186134,51.7490685 C252.186134,60.7489065 253.491568,66.7487985 259.069332,66.7487985 C262.064902,66.5594648 264.764362,64.8563275 266.249219,62.21888 L266.249219,32.21942 C266.390654,31.2815223 266.056184,30.3345743 265.359151,29.6994654 L260.434104,24.5695577 L260.434104,24.3595615 L282.537477,24.3595615 L282.537477,66.5388023 Z M357.777951,74.1886646 C357.777951,72.5686937 358.074641,51.9290653 358.074641,47.1891506 C358.074641,38.1893126 356.6802,31.9794244 350.42005,31.9794244 C347.270186,32.0776503 344.353025,33.6804825 342.557776,36.2993466 C343.18562,39.1040425 343.48437,41.9737843 343.447845,44.8491927 C343.447845,51.0890804 343.240162,59.0389373 343.151156,66.9887942 C342.988385,67.9022064 343.329293,68.8329105 344.041224,69.4187504 L349.025609,74.0386673 L349.025609,74.2486635 L326.714553,74.2486635 C326.714553,72.7486905 327.011243,51.9890642 327.011243,47.2491495 C327.011243,38.0993142 325.616802,32.0394233 319.445659,32.0394233 C316.403519,32.1497787 313.628143,33.8245016 312.087758,36.4793434 L312.087758,67.0787926 C312.087758,68.3987688 312.087758,68.6987634 312.977826,69.5087488 L317.843535,74.1286657 L317.843535,74.3386619 L295.769831,74.3386619 L295.769831,32.3394179 C295.911266,31.4015202 295.576796,30.4545722 294.879763,29.8194632 L289.984385,24.5695577 L289.984385,24.3595615 L312.087758,24.3595615 L312.087758,35.0393693 C314.137065,27.9881842 320.668581,23.2514102 327.930981,23.5495761 C335.288882,23.5495761 340.273267,27.6895016 342.379763,35.5493601 C344.719288,28.3004264 351.454059,23.4362879 358.994379,23.5495761 C368.844472,23.5495761 374.422236,30.8994438 374.422236,44.7891938 C374.422236,51.4190744 374.214553,58.9789384 374.125547,66.9287953 C373.952564,67.8696982 374.348964,68.8245831 375.134291,69.3587515 L380,73.9786684 L380,74.1886646 L357.777951,74.1886646 Z M80.1061836,67.6487823 L86.6630231,73.9786684 L86.6630231,74.1886646 L53.4041224,74.1886646 L53.4041224,73.9786684 L60.0796377,67.6487823 C60.7915689,67.0629424 61.1324765,66.1322382 60.9697064,65.218826 L60.9697064,24.7495545 C60.9697064,23.0395853 60.9697064,20.7296269 61.266396,18.7496625 L38.8366646,74.99865 L38.569644,74.99865 L15.3388507,23.2495815 C14.8344785,21.9596047 14.6861337,21.8696063 14.3597751,20.999622 L14.3597751,54.9290113 C14.0816541,57.1998601 14.4630776,59.5034711 15.4575265,61.5588919 L24.803248,73.9786684 L24.803248,74.1886646 L0,74.1886646 L0,73.9786684 L9.34572142,61.5288925 C10.3328267,59.4818103 10.7140269,57.1899651 10.4434728,54.9290113 L10.4434728,17.4296863 C10.5954314,15.5833058 10.0434888,13.7480448 8.90068707,12.2997786 L2.28450968,3.62993466 L2.28450968,3.41993844 L26.0196752,3.41993844 L45.8978763,47.2491495 L63.4025609,3.41993844 L86.6333542,3.41993844 L86.6333542,3.62993466 L80.1061836,10.9798024 C79.3240288,11.5579979 78.9332348,12.5342442 79.0974391,13.499757 L79.0974391,65.218826 C78.9244564,66.1597289 79.3208565,67.1146139 80.1061836,67.6487823 Z M106.125859,47.3691473 L106.125859,47.5791436 C106.125859,60.4189124 112.682698,65.5788196 120.366958,65.5788196 C126.78345,65.8003157 132.721728,62.1623382 135.498126,56.3089864 L135.705809,56.3089864 C133.035603,68.998758 125.262336,74.99865 113.632105,74.99865 C101.082136,74.99865 89.2442224,67.3487877 89.2442224,49.6191068 C89.2442224,30.9894422 101.111805,23.5495761 114.225484,23.5495761 C124.787633,23.5495761 136.032167,28.5894854 136.032167,44.7891938 C136.032167,45.0891884 136.032167,46.1691689 136.032167,47.3691473 L106.125859,47.3691473 Z M106.125859,44.7891938 L120.752655,44.7891938 C120.752655,43.4692175 120.752655,42.5692337 120.752655,42.1792408 C120.752655,28.9794784 118.05278,25.4695415 113.988132,25.4695415 C109.063086,25.4695415 106.066521,30.719447 106.066521,44.7891938 L106.125859,44.7891938 Z"/>
+          </g>
+        </g>
+      </svg>
+    </div>
+
+    <!-- Social bar -->
+    <div class="items-center h-100 dn">
+      <!-- Twitter icon -->
+      <a class="pointer link gray hover-black-80 mr2 dn di-l">
+        <svg width="25" height="25" viewbox="0 0 25 25" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+          class="v-mid">
+          <title>Twitter</title>
+          <path d="M21.725 5.338c-.744.47-1.605.804-2.513 1.006a3.978 3.978 0 0 0-2.942-1.293c-2.22 0-4.02 1.81-4.02 4.02 0 .32.034.63.07.94-3.31-.18-6.27-1.78-8.255-4.23a4.544 4.544 0 0 0-.574 2.01c.04 1.43.74 2.66 1.8 3.38-.63-.01-1.25-.19-1.79-.5v.08c0 1.93 1.38 3.56 3.23 3.95-.34.07-.7.12-1.07.14-.25-.02-.5-.04-.72-.07.49 1.58 1.97 2.74 3.74 2.8a8.49 8.49 0 0 1-5.02 1.72c-.3-.03-.62-.04-.93-.07A11.447 11.447 0 0 0 8.88 21c7.386 0 11.43-6.13 11.414-11.414.015-.21.01-.38 0-.578a7.604 7.604 0 0 0 2.01-2.08 7.27 7.27 0 0 1-2.297.645 3.856 3.856 0 0 0 1.72-2.23"/>
+        </svg>
+      </a>
+      <!-- Facebook icon -->
+      <a class="pointer link gray hover-black-80 dn di-l">
+        <svg width="25" height="25" viewbox="0 0 25 25" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+          class="v-mid">
+          <title>Facebook</title>
+          <path d="M21 12.646C21 7.65 16.97 3.6 12 3.6s-9 4.05-9 9.046a9.026 9.026 0 0 0 7.59 8.924v-6.376H8.395V12.64h2.193v-1.88c0-2.186 1.328-3.375 3.267-3.375.93 0 1.728.07 1.96.1V9.77H14.47c-1.055 0-1.26.503-1.26 1.242v1.63h2.517l-.33 2.554H13.21V21.6c4.398-.597 7.79-4.373 7.79-8.954"/>
+        </svg>
+      </a>
+    </div>
+
+    <!-- Metabar nav items -->
+    <nav class="flex items-center ml-auto h-100 z-1">
+
+      <!-- Logged in metabar view -->
+      <div id="loggedIn" class="flex items-center ml-auto h-100">
+        <!-- Search icon -->
+        <div id="search" class="dn flex-ns items-center ml-auto h-100 pl3">
+          <a class="link pointer gray hover-black-80 ml-auto all-animate">
+            <svg width="25" height="25" viewbox="0 0 25 25" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+              class="v-mid">
+              <title>Search</title>
+              <path d="M20.067 18.933l-4.157-4.157a6 6 0 1 0-.884.884l4.157 4.157a.624.624 0 1 0 .884-.884zM6.5 11c0-2.62 2.13-4.75 4.75-4.75S16 8.38 16 11s-2.13 4.75-4.75 4.75S6.5 13.62 6.5 11z"/>
+            </svg>
+          </a>
+        </div>
+        <!-- Notification icon -->
+        <a class="gray dn flex-ns pointer hover-black-80 mh3 v-mid all-animate">
+          <svg width="25" height="25" viewbox="-293 409 25 25" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+            class="v-mid">
+            <title>Notification</title>
+            <path d="M-273.327 423.67l-1.673-1.52v-3.646a5.5 5.5 0 0 0-6.04-5.474c-2.86.273-4.96 2.838-4.96 5.71v3.41l-1.68 1.553c-.204.19-.32.456-.32.734V427a1 1 0 0 0 1 1h3.49a3.079 3.079 0 0 0 3.01 2.45 3.08 3.08 0 0 0 3.01-2.45h3.49a1 1 0 0 0 1-1v-2.59c0-.28-.12-.55-.327-.74zm-7.173 5.63c-.842 0-1.55-.546-1.812-1.3h3.624a1.92 1.92 0 0 1-1.812 1.3zm6.35-2.45h-12.7v-2.347l1.63-1.51c.236-.216.37-.522.37-.843v-3.41c0-2.35 1.72-4.356 3.92-4.565a4.353 4.353 0 0 1 4.78 4.33v3.645c0 .324.137.633.376.85l1.624 1.477v2.373z"/>
+          </svg>
+        </a>
+        <!-- Blank avatar image -->
+        <a>
+          <img alt="avatar" width="32" height="32" class="pointer br-100 h2 w2 mw2 v-mid"
+            src="data:image/unknown;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAB9VBMVEX////9/f34+Pf09PP09PP4+Pf9/f3////29vXm5uXg4N7e3tzg4N7m5uX29vX////09PTh4d/d3dve3tze3tzd3dvh4d/09PT7+/rj4+Le3tze3tze3tze3tzj4+L7+/rw8O/e3tze3tze3tzw8O/+/v7m5uXe3tvm5uX+/v76+vrh4eDe3tzh4eD6+vr39/ff393e3tzf39339/f19fTe3t3e3tze3t319fT09PPe3tze3tze3tz09PP09PPe3tze3tz09PP19fTf393e3tz19fT39/bf393e3tz39/b5+fnh4d/e3tz5+fn8/Pzj4+He3tzj4+H8/Pz+/v7p6efd3dve3tzp6ef+/v729vbi4uDe3tzi4uD29vb19fXg4N7e3tzg4N719fX4+Pjg4N7e3tzv7+7e3tz////+/v77+/r29vbv7+7h4eDe3tzh4eDv7+729vb8/Pz19fXw8O/r6+rm5uXi4uDf393e3tze3tzi4uDr6+r19fX8/Pz39/bl5ePf393e3tzd3dve3tve3tze3tze3tz8/Pzl5eTd3dve3tzl5eT8/Pzy8vLe3tze3tze3tzy8vL+/v7o6Ofd3dvo6Of+/v74+Pjh4d/e3tzh4d/4+Pju7u3e3tze3tze3tze3tzu7u3l5ePe3tzl5eMAAAApIJzjAAAAAWJLR0Smt7AblQAAAAd0SU1FB+IDEhEuNWq48aUAAAFfSURBVDjLY2CgM2BkYmZhZcMpzc7BycXNzcPLx49DgYCgkLCIiLComDh2eQlJKWkZIJCWlZPHqkBBUUkGDJSUVbDJq6qpy0CBuoYmFgVa2jowBTq6elgU6BsYwhQYGhljUWBiagZTYGZugUWBpZUITIG1jS0WBXb2cAUiDo5YFDg5u8AUuDi7YlHg5u4BU+Dh7olFgZe3D0yBj7cvFgV+/gEwBQGBQVgUBIeEhkHkw0LDI7CFdWRUNERBdEws9uiMi08AySckJmGXZ0hOSQUpSE1JxqEgLR0c30rpaZhyGZlZ2Tm5eRA35OUXFGZlZiBki4pLSsvKKyqrpCEKpKsqK6rLakpq6yDy9Q2NTc0trW3tMnDQ3tba0tzU2FAPku/o7OqWwQq6u3p6gQr6+ifI4AATJk5iYJg8ZWoYLgVhU6dNZ5gxc5YMTjBr9hyGufPm41awYOEihsVLZPCAJUsBsmtopP/4UcgAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTgtMDMtMThUMTc6NDY6NTMtMDQ6MDDpUS8yAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE4LTAzLTE4VDE3OjQ2OjUzLTA0OjAwmAyXjgAAAABJRU5ErkJggg==">
+        </a>
+      </div>
+    </nav>
+  </div>
+
+</header>
+
+<main class="mw7 mh3 mb5 center">
+
+  <!-- Author card  -->
+  <div id="authorCard" class="ma3 sans-serif mt4-l">
+    <div class="dtc h-100">
+      <img src="data:image/unknown;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAAAAACPAi4CAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAHdElNRQfiAxISASAXP5N6AAAB3ElEQVRYw+3Uv0sCYRgH8Ec6fxC3tBiC2CAHEdZwKEKOCnKQi+VQELU4F+3+AzoEtejWLEaLGunk1iKCOAiBOZwOSmkiSnQ/0vOu09De81oK7js9PNzzuZf3uAf4XwY0QAM0QAP+B8AOX5vN1yGrCuBeCtEjL0kQpPcoWnjhlgR62QsnDl/BnRfZ3hLAW4pahW9ZpVJvSoFy0AhzYgyWlQEZAhaEyCgB8lZYGGseDTw74Yc4n5HApXBjVot+dlJvsQr3eokChhSAKXRfq964dfK4zn1Trd2HTADUEAE0CFiJDMYVvScDe/S4M4isANFAAHUbeNqT8tEszZsfJ522BzbqCIC2Q0ws34MSEHwXWzGw0wig64KkVJ9LwLnUSYKriwDYY7gWS+ZQAg4ZsXUNxywC4OPgF3+bik0CbJVJp+eHOOoz8jWH/kp4YfdE/gonwsGZK72jhgT49Dp+Vuq0cgFMBrBArtUpneHraR4NsA8+w9rO1tQ2EDbC1vaawffAKgBGh78L71qwWQCz7IbvunMenr+R2P5TcnN6fjP51J+/GhfvxNNp4HTZnThKQkce7As5IHUJfnmgSBY5Rgg3KlUAndsPqfy47agAOEauGU4FoDAaoAEaoAF/B/gE7U9OnS9/7qYAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTgtMDMtMThUMTg6MDE6MzItMDQ6MDD8PJDPAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE4LTAzLTE4VDE4OjAxOjMyLTA0OjAwjWEocwAAAABJRU5ErkJggg==" alt="avatar" class="br-100 pa1 ba b--moon-gray h2 h3-l w2 w3-l v-mid">
+    </div>
+
+    <div class="dtc v-mid h-100 pl2">
+      <div class="flex items-center ma0 pa0">
+        <h1 class="f6 fw4 fs-normal black mv0">Adam Morse
+          <button type="button" class="sans-serif f7 pointer tracked-tight br2 ba green b--green bg-white ph2 ml2 v-top">
+            Follow
+          </button>
+        </h1>
+      </div>
+
+      <div class="items-center mt1 dn db-l">
+        <h2 class="f6 fw4 mv0 black-60">Trying to make the web: fast, readable, and easy to
+          navigate.
+        </h2>
+      </div>
+
+      <div class="flex items-center pt1">
+        <h2 class="f6 fw4 mv0 black-60">
+          <time datetime="2016-03-24 00:00:00 +0000">March 24, 2016</time>
+          &#8226; 10 min read
+        </h2>
+      </div>
+    </div>
+  </div>
+
+  <div id="banner" class="mw6 center ph3 mv5">
+    <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 394.63 155.75"
+      class="light-red">
+      <title>tachyons-cleaned-flat</title>
+      <path d="M200.83,67.66l-1.77.07c-1.62.07-3.51,3.69-4.8,6.66-6.74,15.54-13.21,31.26-21.8,45.86s-24.25,38.92-32.15,35.35c-3-1.18-2.48-4.35-1.83-7.49a40.64,40.64,0,0,1,2.53-7.91c1.17-3,3.68-10.33,6.77-11.14s3.44,0.35,6.07.42c1.42,0,2.88-2.22,3.25-3,1.73-4-1.94-6.24-5.89-7.66a9.37,9.37,0,0,0-5.37-.69c-2,.51-3.48,2.13-4.84,3.68-9.08,10.33-24.42,35.71-28.55,36.64-0.94-8.28,4.86-20.73,6.63-28.26,0.61-2.6,2.3-7.24.91-9.52-0.82-1.34-3.31-.51-4.63-1.35-3.87-2.45-8.13-5-12.68-4.5-3.41.38-6.38,2.44-9.06,4.57-11,8.76-20.66,21.28-20.2,35.37a16.09,16.09,0,0,0,.72,3.72c-0.3,1.26-4.17,9.22-4.81,10.34-5,8.84-11.89,16.27-15.35,14.26-4.15-4.42-.9-17,0.49-23.21,2.74-12.53,4.51-15.48,8.16-27.71,1.23-4.12,4.1-10.64,5.47-14.72,0.53-1.58.91-4.36,2.36-5.37s3.83-1,5.42-1.29l3.34-.37c2.38-.2,4.74-0.58,7.13-0.6a15.17,15.17,0,0,0,4.27-.73,41.82,41.82,0,0,1,4.5-.86c1.16-.26,3.09-0.52,4.27-0.64l23-2.36c3.21-.33,6.43-0.66,9.66-0.81,2.59-.12,5.19-0.12,7.78-0.15l3.38-.06a38.44,38.44,0,0,0,10.64-1.53c1.32-.39,1.7-1.16,1.46-2.22a25.16,25.16,0,0,0-.75-4c-0.65-1.56-7.53-.69-11.17-0.36L131,97.25l-24.84,2.24c-11.31,1-22.65,2-33.78,4.34,1.44-3.19,2.92-6.65,2.23-10.09a8.46,8.46,0,0,0-.34-1.21c-1.17-3.23-4.23-5.42-7.44-6.36-2.69-.79-2.32,1.06-3.4,3.2-0.48,1-1,1.9-1.42,2.88l-2.18,4.94a28.93,28.93,0,0,0-2,5.46,3.14,3.14,0,0,1-.3.94,2.45,2.45,0,0,1-2.17.88c-5,.1-10,0.48-15,1-2.56.26-5.11,0.56-7.66,0.89s-4.81.74-7.23,1.11c-1.66.26-3.33,0.46-5,.57-1,.06-2,0-3,0.1a1.87,1.87,0,0,0-1.74.67c-1.52,1.23.57,3.83,1.49,5,2,2.57,3.19,2.15,6.1,1.73a46.16,46.16,0,0,1,6-.9c0.82,0,2-.3,2.82-0.37s1.4-.31,2.26-0.41c0.48-.06,2-0.12,2.46-0.12l4.86,0c2.8-.05,5.69-0.3,8.46-0.23,0.62,0,1.64-.53,2,0.22a10.82,10.82,0,0,1-.05,3.06c-0.9,4.3-3.76,10.94-4.94,15.17-0.9,3.24-1.71,6.49-2.47,9.77-2.89,12.59-5.54,24.64-4.36,37.56,0.44,4.81,1.88,6.52,6.09,9.58,2.55,1.85,6.82,2.25,9.9,1.6a16.61,16.61,0,0,0,11.22-8.83l10.23-19.85c2.38,2.07,4.69,4,8.3,3.68s17-20.85,17-20.85c-1.09,3.71-2.19,7.51-1.95,11.37s2.09,7.85,5.55,9.58c4.18,2.1,8.63-.68,11.91-4s5.43-7.36,8-10.86c0.19,4.33,2.49,6.54,5.36,9,5.38,4.55,12.06,2.79,17.92-1.12s12.66-13.22,16.35-19.23l-8,29.09c-0.64,2.38-2.8,8-.86,9.57a15.15,15.15,0,0,0,14.53,2c3.36-1.34,2.78-6.38,4.16-9.73,5.08-12.31,9.46-31.09,20.16-34.17,3.69-1.06.22,11-.94,16.84-1,5-1.64,13.71,2.75,17.21,2.82,2.24,5.53,2.79,8.41.64,6-4.47,11.69-14.13,14.3-20.31-0.27,9.17,1.22,11.77,5.67,14.44a10.5,10.5,0,0,0,3.1,1.26c6.58,1.47,10.36-3.47,13.51-8,4.4-6.28,7.45-12,11.85-18.24-1.48,12.5-3.73,26.71-3.73,26.71-3.66,5-14.47,15.52-18.14,20.5a60.06,60.06,0,0,0-9.61,20,11.67,11.67,0,0,0,1,7.39,10.45,10.45,0,0,0,4.93,5.37c3,1.78,7.2,3.79,10.75,3.46,6.39-.6,10.76-6.77,13-12.77,3.89-10.34,8-36.26,10.25-47.06,0,0,3.25-4.92,13.13-12.09-0.48,4.27-2.41,8.12-2.3,12.61,0.14,5.8,2.67,11.76,8.19,14.49a10.93,10.93,0,0,0,3.14,1c6.64,1,10.37-3.49,13.26-8a83,83,0,0,0,12.53-53.84c-0.49-4.31-1.49-8.93-6.48-10.76a10.49,10.49,0,0,0-6.26-.24c-4.76,1.25-8.17,5.1-10.5,9.3a23,23,0,0,0-3.18,13.17,9.58,9.58,0,0,1,0,3.94,7.31,7.31,0,0,1-1.68,2.48c-5.53,6.11-12,14.18-18.51,19.27,1-6.2,3.18-15,3.47-20.53,0.2-3.77-.32-6.26-4.34-7.74-1.26-.46-4.8-1.09-6.1-0.76-3.63.94-3.85,4.37-6.12,7.09-5.24,6.29-13.91,18.8-15.73,18.86-3.16.28-1.14-6-.85-6.89a99.67,99.67,0,0,1,7.71-18.79c0.53-1,1.17-2.15.83-3.25a3.72,3.72,0,0,0-1-1.47c-3.08-3.09-11.56-6.09-12.69-3.23s-2.94,7.46-3.75,10.23c0,0-3.59,6.35-6.27,10.1-5.62,7.85-18.79,33.79-18.05,22.6l2.83-23.79a8.63,8.63,0,0,0-.56-4.46c-2.44-5.63-9.43-4-14.43-1.92l16-48.54c1-2.94,3.63-9.59,3.19-12.66C208.45,67.82,203.81,67.47,200.83,67.66Zm100.54,41.93a7.57,7.57,0,0,1,3.79,4.72c1.3,4.07.91,8.47,0.33,12.7-2.21,16.13-7.32,32.45-18.32,44.46a2.48,2.48,0,0,1-1.16.85c-2.17.09-.34-8.16,0.17-10.65a50.89,50.89,0,0,1,2-6.56l6.56-18.73a5.84,5.84,0,0,0,.48-3.13c-0.53-2.38-3.53-3.07-6-3.36a2.72,2.72,0,0,1-1.83-.71,2.59,2.59,0,0,1-.39-1.86,22.19,22.19,0,0,1,9.74-16.83,6.34,6.34,0,0,1,2.75-1.17A3.78,3.78,0,0,1,301.37,109.59ZM106.32,125.33c1.22-.07.58,1.4,0.65,1.35-1.89,5-5.63,9.86-9.19,14.65-1.74,2.34-3.35,4.9-5.13,7.21s-4.42,7.46-7.07,9.09c-5-2.13-.71-9.47.62-11.64l2.62-4.29c2.11-3.46,4.25-7,7.24-9.7,1.7-1.56,3.31-3.71,5.23-5A11.1,11.1,0,0,1,106.32,125.33ZM250,176.3l-2.72,14c-0.58,3-1.2,4.72-1.81,7.08l-1.6,6.2a15.63,15.63,0,0,1-2.44,5.92c-0.72.91-5,5-8.35,3.53a3.83,3.83,0,0,1-2.57-4.64c0.75-4.79,3.29-10.08,5.3-14C239.4,187.59,245,182.13,250,176.3Z"
+        transform="translate(-15.13 -67.61)" />
+      <path d="M328,117.48l-0.08,0c-1.42.52-2.14,2.06-2.71,3.47q-4.48,11.09-8.3,22.42-1.91,5.66-3.66,11.38-0.87,2.86-1.7,5.73c-0.36,1.25-.56,2.18-1,3.79s-0.61,2.16-.9,3.24c-0.87,3.22-2.22,7.42,1.17,9.71a15.33,15.33,0,0,0,4,1.71,14.24,14.24,0,0,1,2.16,1c1.54,0.84,3.19,1.5,5.33.54a5.9,5.9,0,0,0,1.88-1.49c1.78-2,2.31-4.29,3.59-6.5l4.45-7.67c2.91-5,5.82-10,8.91-14.94,1-1.58,2.36-4.2,3.47-5.7,1.29-1.74,2.58-3.55,4.52-5.87a5.5,5.5,0,0,1,2.69-1.6c1.79-.09.47,3.81,0.19,4.52-0.85,2.14-1.09,3.4-2,6.11a53.63,53.63,0,0,0-1.56,5.74,36.69,36.69,0,0,0-.63,4.8c-0.11,1.68-.1,3.37-0.09,5.06a11.6,11.6,0,0,0,.78,5.05,9.61,9.61,0,0,0,3.49,4,10.88,10.88,0,0,0,5.4,1.9c4.42,0.09,8-3.61,10.76-6.62l5.56-6.1c3.23-3.54,6.46-7.09,9.43-10.85,3.21-4.06,6.12-8.36,9.47-12.31a48.64,48.64,0,0,1,5.34-5.47c1.14-1,4.39-3.77,5.09-2.2a16.27,16.27,0,0,1-.37,2.95c-0.2,1.72-.57,3.44-0.93,5.13-0.7,3.28-1.59,6.51-2.47,9.74-0.36,1.3-.83,2.91-0.83,2.91s-2,.36-3.16.59a9.6,9.6,0,0,0-2.93,1.1,16.08,16.08,0,0,0-7.71,14.36,9.85,9.85,0,0,0,.7,3.36,7.41,7.41,0,0,0,8.87,4,10.38,10.38,0,0,0,4.32-3.14c3.4-3.88,5-9,6.35-14a177.84,177.84,0,0,0,4.2-20.9c0.58-4.16,2.15-11.43-3.84-12.31-2.58-.38-5.14.72-7.4,2a36,36,0,0,0-4.78,3.33,71.94,71.94,0,0,0-7.31,7.31L380.23,143,358.6,166.85c-0.93-.19-1.16-1.39-1.15-2.34,0.15-8.84,4.34-17.41,3.44-26.21a9.23,9.23,0,0,0-2.29-5.75c-2.09-2.05-5.51-2.18-8.23-1.1s-4.9,3.16-7,5.19c-3.43,3.29-7.84,9.81-11.27,13.11,1.94-7.22,4.86-17.66,6.8-24.88,0.55-2,.9-4.67-0.84-5.87a5.19,5.19,0,0,0-2.17-.69l-5.23-.83A5.66,5.66,0,0,0,328,117.48ZM398,153l-0.17,1a12.71,12.71,0,0,1-.51,1.83c-0.23.68-.5,1.35-0.79,2a31.76,31.76,0,0,1-1.6,3.2c-0.3.52-.63,1-1,1.5a2,2,0,0,1-1,.95,1.49,1.49,0,0,1-1.33-.27,1.85,1.85,0,0,1-.63-1.2,3.7,3.7,0,0,1,.12-1.38,16.93,16.93,0,0,1,2.42-5.1,7.29,7.29,0,0,1,1.57-1.68A3.8,3.8,0,0,1,397,153C397.29,153,398,153,398,153Z"
+        transform="translate(-15.13 -67.61)" />
+      <path d="M199.82,139.58c-0.26.08-.28,0.31,0,0.3a0.3,0.3,0,0,0,.24-0.2,0.38,0.38,0,0,0,0-.18l-0.25.08h0Z"
+        transform="translate(-15.13 -67.61)" />
+    </svg>
+  </div>
+
+  <article class="ph3">
+
+    <h1 class="f3 sans-serif f2-ns black-90 nowrap">Css and Scalability <br>
+      <small class="fw4 sans-serif gray f4 f3-ns nowrap">by Adam Morse</small>
+    </h1>
+
+    <p id="first-p" class="lh-copy f5 f4-ns fw3 black-80 mv3 mv4-ns">
+      Several years ago I got curious about how css worked at scale. When I first started out,
+      there weren’t nearly as many learning resources as there are now. There were a few books
+      that my friends lent me and a couple of decent blog posts. But css was still pretty new and
+      most people hadn't started to think deeply or learn hard lessons about concepts of
+      maintainability when working with teams on large web apps.
+    </p>
+    <p class="lh-copy f5 f4-ns fw3 black-80 mv3 mv4-ns">
+      Css zen garden was a highly influential demo '<em>back in the day</em>.' Most of my
+      colleagues and I thought this did a perfect job at illustrating the power of the cascade.
+      You could drastically alter a site's visual design without touching even a bit of html.
+    </p>
+    <p class="lh-copy f5 f4-ns fw3 black-80 mv3 mv4-ns">
+      In the beginning, that’s what people sold me as a feature. By writing css, you could make a
+      change in one place and have it propagate everywhere. In principle this sounds highly
+      desirable. But eleven years later, my experience on both large and small teams is that this
+      is the most terrifying thing about css and can cripple an organizations ability to iterate
+      on their product.
+    </p>
+
+    <blockquote class="ph0 mh0 f4 f3-m f2-l black-90 measure-narrow">
+      <p class="lh-copy lh-title-ns fw9 mb1 mb2-m mb3-l">
+        Two css properties walk into a bar. <br class="dn db-ns"> A barstool in a completely
+        different bar falls over.
+      </p>
+      <cite class="f5 f4-l">&mdash;
+        <a class="link dim black"
+          href="https://twitter.com/thomasfuchs/status/493790680397803521"
+          title="Thomas Fuchs on Twitter">@thomasfuchs</a>
+      </cite>
+    </blockquote>
+
+    <p class="lh-copy f5 f4-ns fw3 black-80 mv3 mv4-ns">
+      After countless implementations of css systems that broke down and became difficult to
+      maintain as apps and teams grew larger... I've found I want little to no part of the
+      cascade's 'features.'
+    </p>
+    <p class="lh-copy f5 f4-ns fw3 black-80 mv3 mv4-ns">
+      I used to joke that the worst part about front-end development was that the other people
+      solving your problems were front-end developers. But in the past few years a lot of very
+      smart people have been thinking more about css and this has lead to some fascinating
+      discussions around how to build ‘scalable’ ui and how that relates to css. When I first
+      started to think about scalability I naturally started to read every blog post and watch
+      every tech talk I could get my hands on. There are a number of suggested 'best practices'
+      around how sass/less/stylus etc. will help you build maintainable css. How mixins can make
+      your code more <abbr title="Don't Repeat Yourself">DRY</abbr>. How extends will keep your
+      markup clean and pretty to look at. How <abbr title="Block Element Modifier">BEM</abbr> will
+      make your code so perfect you want to cry.
+    </p>
+    <p class="lh-copy f5 f4-ns fw3 black-80 mv3 mv4-ns">
+      But what is reality? What actually gets shipped to production? What do all of these tips and
+      tricks do to our production css? How does it affect the whole team? More important, how are
+      your end users affected?
+    </p>
+    <p class="lh-copy f5 f4-ns fw3 black-80 mv3 mv4-ns">
+      When it comes to designing and shipping products I like to think about reality. Which can be
+      challenging sometimes. I’ve sat in too many meetings where people don't want to hear or talk
+      about reality. They talk in empty phrases about hypothetical possibilities. I like to do
+      drugs and talk like that too sometimes. But, if you don't accurately assess where you
+      currently are and what your reality is, it can be pretty tough to figure out what your
+      problems are. And the chance of finding solutions to unidentified problems is, well, not
+      good.
+    </p>
+    <p class="lh-copy f5 f4-ns fw3 black-80 mv3 mv4-ns">
+      So there I was, in the fall of 2014, a new employee at an
+      <a title="sfdc dot com" href="http://salesforce.com"
+        class="link dim underline black-80">award winning tech company</a> that had a website. And
+      that website had a lot of css. Wanting to familiarize myself with the codebase - I opened up
+      dev tools and started to read the site's css.
+    </p>
+    <p class="lh-copy f5 f4-ns fw3 black-80 mv3 mv4-ns">
+      Line by line.<br>From start to finish.<br>
+    </p>
+    <p class="lh-copy f5 f4-ns fw3 black-80 mv3 mv4-ns">
+      Some of the code made me laugh:
+    </p>
+
+    <figure class="css bg-light-gray nl3 nr3 mh1-m mh4-l">
+      <pre class="pa4 f7 f6-m f5-l overflow-x-auto"><code class="black-70 lh-copy fw3">/* Start of reusable styles here */</code></pre>
+    </figure>
+
+    <p class="lh-copy f5 f4-ns fw3 black-80 mv3 mv4-ns">
+      Some of the code made me cry.
+    </p>
+
+    <figure class="css bg-light-gray nl3 nr3 mh1-m mh4-l">
+      <pre class="pa4 f7 f6-m f5-l overflow-x-auto"><code class="black-70 lh-copy fw3">.homepage-promos .grid-50 {
+  width: 100%
+}
+.homepage-promos .grid-33 {
+  width: 100%
+}
+.homepage-promos .grid-34 {
+  width: 100%
+}</code></pre>
+    </figure>
+
+    <p class="lh-copy f5 f4-ns fw3 black-80 mv3 mv4-ns">
+      Some of it made me laugh and cry at the same time.
+    </p>
+
+    <figure class="css bg-light-gray nl3 nr3 mh1-m mh4-l">
+      <pre class="pa4 f7 f6-m f5-l overflow-x-auto"><code class="black-70 lh-copy fw3">#seo-container {
+  display: none;
+}</code></pre>
+    </figure>
+
+    <p class="lh-copy f5 f4-ns fw3 black-80 mv3 mv4-ns">
+      Some of it made me wonder where numbers come from
+    </p>
+
+    <figure class="css bg-light-gray nl3 nr3 mh1-m mh4-l">
+      <pre class="pa4 f7 f6-m f5-l overflow-x-auto"><code class="black-70 lh-copy fw3">.product-tab {
+  height: 530px;
+  width: 99.7%;
+}</code></pre>
+    </figure>
+
+    <p class="lh-copy f5 f4-ns fw3 black-80 mv3 mv4-ns">
+      Some of it made me thankful that I have read the spec
+    </p>
+
+    <figure class="css bg-light-gray nl3 nr3 mh1-m mh4-l">
+      <pre class="pa4 f7 f6-m f5-l overflow-x-auto"><code class="black-70 lh-copy fw3">.container-inner.promo-status {
+  float: center;
+}</code></pre>
+    </figure>
+
+    <p class="lh-copy f5 f4-ns fw3 black-80 mv3 mv4-ns">
+      Eventually, I stumbled across this class of code.
+    </p>
+
+    <figure class="css bg-light-gray nl3 nr3 mh1-m mh4-l">
+      <pre class="pa4 f7 f6-m f5-l overflow-x-auto"><code class="black-70 lh-copy fw3">.left {
+  float: left !important;
+}</code></pre>
+    </figure>
+
+    <p class="lh-copy f5 f4-ns fw3 black-80 mv3 mv4-ns">
+      I saw this class and thought - well at least you know what it does. Unlike some of the other
+      css it seemed like it was very reusable. By anyone who needed to float something left.
+    </p>
+    <p class="lh-copy f5 f4-ns fw3 black-80 mv3 mv4-ns">
+      I kept reading and stumbled across this:
+    </p>
+
+    <figure class="css bg-light-gray nl3 nr3 mh1-m mh4-l">
+      <pre class="pa4 f7 f6-m f5-l overflow-x-auto"><code class="black-70 lh-copy fw3">.left-max-scr1,
+.left-max-scr2,
+.left-max-scr3,
+.left-only-scr1 {
+  float: left;
+}</code></pre>
+    </figure>
+
+    <p class="lh-copy f5 f4-ns fw3 black-80 mv3 mv4-ns">
+      …followed by this very similar block of code…
+    </p>
+
+    <figure class="css bg-light-gray nl3 nr3 mh1-m mh4-l">
+      <pre class="pa4 f7 f6-m f5-l overflow-x-auto"><code class="black-70 lh-copy fw3">.left-min-scr2,
+.left-min-scr3,
+.left-max-scr3,
+.left-only-scr3 {
+  float: left;
+}</code></pre>
+    </figure>
+
+    <p class="lh-copy f5 f4-ns fw3 black-80 mv3 mv4-ns">
+      I found myself wondering what the story was behind this next code block. Is it for elements
+      with the class <code>.header-nav-list</code> that aren’t nested inside an element with the
+      class <code>.header-nav-container</code>?
+    </p>
+
+    <figure class="css bg-light-gray nl3 nr3 mh1-m mh4-l">
+      <pre class="pa4 f7 f6-m f5-l overflow-x-auto"><code class="black-70 lh-copy fw3">.header-nav-container .header-nav-list {
+  float: left;
+}
+
+.CA .header-nav-list.second {
+  float: left;
+}
+
+#nav.challenger-a .submenu-3col li,
+#nav.challenger-a .submenu-3col li {
+  float: left;
+}</code></pre>
+    </figure>
+
+    <p class="lh-copy f5 f4-ns fw3 black-80 mv3 mv4-ns">
+      Here we start to see a mixture of content-semantic (<code>.submenu</code>) with visually
+      semantic class names (-3col).
+    </p>
+
+    <figure class="css bg-light-gray nl3 nr3 mh1-m mh4-l">
+      <pre class="pa4 f7 f6-m f5-l overflow-x-auto"><code class="black-70 lh-copy fw3">.ie6 #footer-content .flex-control-nav li a,
+.ie7 #footer-content .flex-control-nav li a,
+.ie8 #footer-content .flex-control-nav li a {
+  float: left;
+}
+
+#nav.challenger-a li.menu-products {
+  float: left;
+}</code></pre>
+    </figure>
+
+    <p class="lh-copy f5 f4-ns fw3 black-80 mv3 mv4-ns">
+      Css is interesting because unlike other types of code, you are most likely to find the most
+      recent code towards the bottom of the file. Reading a css file from start to finish will
+      often times reveal in chronological order how a defined system breaks down.
+    </p>
+    <p class="lh-copy f5 f4-ns fw3 black-80 mv3 mv4-ns">
+      In the above examples we see things breaking down to increasingly longer selectors that have
+      more and more weight that were only setting one property to one value: <code>float:
+      left</code>.
+    </p>
+    <p class="lh-copy f5 f4-ns fw3 black-80 mv3 mv4-ns">
+      Mind you, there are only three options for float. Contrary to one of the code examples
+      above, there is no float center. Just left, right, and none.
+    </p>
+    <p class="lh-copy f5 f4-ns fw3 black-80 mv3 mv4-ns">
+      Reading the css made me think about a lot of things. One thing I couldn’t get out of my head
+      was - why all this work to change one thing? Why write all that code to just float something
+      left?
+    </p>
+    <p class="lh-copy f5 f4-ns fw3 black-80 mv3 mv4-ns">
+      To me, this is a reflection of the mental model most people are in when they are writing
+      front-end code. They are generally trying to change one or two things in an interface and
+      that’s it. And when you are in this mode of development you want to limit the amount of
+      things you break - while also making the change that is being asked for in some Jira ticket
+      that got assigned to you.
+    </p>
+    <p class="lh-copy f5 f4-ns fw3 black-80 mv3 mv4-ns">
+      I also started to think about communication and how it moves in multiple directions. If I’m
+      reading html, I want to know what the css is going to do. If I’m reading css I want to know
+      what will happen if I apply it to a block of html. In a great system there is a two way
+      street of information. If you look at the css, you can tell what will happen. If you look at
+      the html, you know what the code will do.
+    </p>
+    <p class="lh-copy f5 f4-ns fw3 black-80 mv3 mv4-ns">
+      But most front-end systems are not great. You have what I refer to as one-way streets of
+      information. If I am looking at a block of html and I can’t find ALL of the css that will
+      visually affect how it renders in under 5 seconds, I feel that system is failing. So if I
+      ran into the above example:
+    </p>
+
+    <figure class="css bg-light-gray nl3 nr3 mh1-m mh4-l">
+      <pre class="pa4 f7 f6-m f5-l overflow-x-auto"><code class="black-70 lh-copy fw3">.container-inner.promo-status</code></pre>
+    </figure>
+
+    <p class="lh-copy f5 f4-ns fw3 black-80 mv3 mv4-ns">
+      That means I would have to find elements that had both of those classes (but not limited to)
+      on an element. But by looking at this block of css I also have no idea if it has been
+      redefined elsewhere. So I must grep through the system to find definitions for
+      container-inner and promo-status. By the time I found those definitions - I would probably
+      have forgotten what I was trying to do in which case I’d leave my desk and go get coffee.
+    </p>
+    <p class="lh-copy f5 f4-ns fw3 black-80 mv3 mv4-ns">
+      On the flip side think about this example:
+    </p>
+
+    <figure class="css bg-light-gray nl3 nr3 mh1-m mh4-l">
+      <pre class="pa4 f7 f6-m f5-l overflow-x-auto"><code class="black-70 lh-copy fw3">.red {
+  color: #FF4136;
+}</code></pre>
+    </figure>
+
+    <p class="lh-copy f5 f4-ns fw3 black-80 mv3 mv4-ns">
+      I’d presume that this would make an element have red text. I was traditionally told this is
+      a horrible name for a class. But I quite like it. The only way I’d think it was bad is if it
+      set the color property to: purple, blue, or any other color that wasn’t red. Or if it was
+      mutated a few times to a few different shades of red. But more on that later.
+    </p>
+    <p class="lh-copy f5 f4-ns fw3 black-80 mv3 mv4-ns">
+      And if I saw this block of html:
+    </p>
+
+    <figure class="html bg-light-gray nl3 nr3 mh1-m mh4-l">
+      <pre class="pa4 f7 f6-m f5-l overflow-x-auto"><code class="black-70 lh-copy fw3">&lt;div class=“red”&gt;Some text&lt;/div&gt;</code></pre>
+    </figure>
+
+    <p class="lh-copy f5 f4-ns fw3 black-80 mv3 mv4-ns">
+      I’d know without looking at the css what was going to happen. This is what I call a two-way
+      street of information. It’s easy to learn a group of small classes that do one thing well
+      and can be reused in any context. There should be a one to one mapping between a class and
+      it’s definition. Having a class that has multiple definitions be being redefined depending
+      on context doesn’t solve problems, it creates them. The concept of immutability is not new -
+      but we’ve ignored it in the css community for far too long. Imagine if you had a function
+      called ‘filesize’ where you passed it a filename and it returned the filesize. That sounds
+      pretty great. But imagine if sometimes it returned the amount of lines in the file. That
+      doesn’t sound great at all does it. Well that’s what you’re doing anytime you redefine a css
+      class. It’s the worst for people who are good at debugging css. It’s even more horrible for
+      people new to the cascade.
+    </p>
+    <p class="lh-copy f5 f4-ns fw3 black-80 mv3 mv4-ns">
+      When we look at convoluted css, we must remember that behind every css ruleset is a story.
+      Maybe the author was on a time crunch and didn’t have time to look up if there was some
+      previously written code they could reuse. Maybe they don’t care about css at all and the
+      second something works they save, commit, and go back to writing monads. When I write bad
+      code, it isn’t because I’m not trying to write good code. There are always other forces at
+      work. What are the forces that work against writing clean reusable code? How do we get rid
+      of them? I’ve spent the last few years doing a lot of user testing centered around how
+      people write their own front-end code, consume other peoples front-end code, and think about
+      developing UI in general. It has been a pretty valuable experience (as user-testing
+      generally is). I’ve learned a lot about the different mental models people use - and how to
+      try to construct systems that allow people of all abilities to spend more time designing /
+      building and less time debugging/fighting/crying.
+    </p>
+
+    <p class="lh-copy f5 f4-ns fw3 black-80 mv3 mv4-ns">
+        <span class="sans-serif fw6">
+          <b>Sidenote:</b>(I don’t know where to fit this in)</span>
+    </p>
+
+    <p class="lh-copy f5 f4-ns fw3 black-80 mv3 mv4-ns">
+      Before I started doing both performance and user testing I did not like the idea of
+      oocss/atomic css. I really liked writing monolithic classes and traversing the dom with my
+      selectors. It made a ton of sense to me and I was able to build out a lot of websites that
+      way. Running tests and testing my assumptions helped inform a lot of how I think about code
+      now. I’m not very interested in what I can do with css. I’m interested at this point in what
+      I can help groups of people do with css.
+    </p>
+    <p class="lh-copy f5 f4-ns fw3 black-80 mv3 mv4-ns">
+      If you’re going to build a new component, or change a piece of UI in your app - what do you
+      do? I don’t know anyone that reads all the available css in the app to see if there is
+      something they can reuse. Who has time to read thousands of lines of code before they start
+      working!? Even if people do have the time, I have not found that this is their first
+      instinct on how to get going. I don’t blame them.
+    </p>
+    <p class="lh-copy f5 f4-ns fw3 black-80 mv3 mv4-ns">
+      Even if you did read all of the available css and stumbled upon some code that you think
+      might be reusable - what if someone edits it later? If you are starting from the assumption
+      that your css isn't reusable, your first instinct is to write new css. But most likely you
+      aren't creating a new classification of visual styles. In my experience it is likely that
+      you are replicating visual styles that already exist.
+    </p>
+    <p class="lh-copy f5 f4-ns fw3 black-80 mv3 mv4-ns">
+      Salesforce may pay people a lot of money. And they may win Forbes awards for being the most
+      innovative. But they are not known for hiring people who are great at css. Their css is
+      anything but innovative. After reading all of the css and going through bits of crying,
+      head-scratching, and laughing out loud - I determined that this problem must only exist at
+      Salesforce. Surely awesome companies like Medium, GitHub, Adobe, and Pinterest didn’t have
+      this problem. They’ve hired some of the most amazing css developers I’ve ever met. They must
+      have figured out how to scale css.
+    </p>
+    <p class="lh-copy f5 f4-ns fw3 black-80 mv3 mv4-ns">
+      Naturally I opened up their sites and started to read their css too. Line by line. From
+      start to finish. I wanted to see what everyone’s reality really was.
+    </p>
+    <p class="lh-copy f5 f4-ns fw3 black-80 mv3 mv4-ns">
+      I found the exact same things.
+    </p>
+    <p class="lh-copy f5 f4-ns fw3 black-80 mv3 mv4-ns">
+      Let’s take a look at just the rulesets that set things to display none:
+    </p>
+
+    <ul class="list lh-copy pl0 mt0">
+      <li>
+        <a class="f5 f4-ns link underline dim black-80"
+          href="https://gist.github.com/mrmrs/786241f0a5fade0324e2"
+          title="GitHub">GitHub</a>
+      </li>
+      <li>
+        <a class="f5 f4-ns link underline dim black-80"
+          href="https://gist.github.com/mrmrs/57705f9a9fdce4d3d6f7"
+          title="Pinterest">Pinterest</a>
+      </li>
+      <li>
+        <a class="f5 f4-ns link underline dim black-80"
+          href="https://gist.github.com/mrmrs/07e2ad668bac33e2da67"
+          title="Medium">Medium</a>
+      </li>
+      <li>
+        <a class="f5 f4-ns link underline dim black-80"
+          href="https://gist.github.com/mrmrs/2d5592826adb45748bac"
+          title="Adobe">Adobe</a>
+      </li>
+    </ul>
+
+    <p class="lh-copy f5 f4-ns fw3 black-80 mv3 mv4-ns">
+      That’s a lot of code setting things to display: none. If you look at the files above ask
+      yourself some questions: Do they seem like they follow the principles behind <abbr
+      title="Don't Repeat Yourself">DRY</abbr>? Does this seem like a bunch of code you would know
+      how to reuse?
+    </p>
+    <p class="lh-copy f5 f4-ns fw3 black-80 mv3 mv4-ns">
+      If I’m going to write css, I want it to be reusable. If someone isn’t going to reuse it - it
+      seems pretty useless.
+    </p>
+    <p class="lh-copy f5 f4-ns fw3 black-80 mv3 mv4-ns">
+      So what does <abbr title="Don't Repeat Yourself">DRY</abbr> even mean? Because you do have
+      to repeat yourself somewhere! You either repeat yourself in html or in css. But no matter
+      how good you are at css - you can’t build out a new component without editing html. But, it
+      is possible to build a new component without writing a single line of css. And this applies
+      to changing UI too. You should be able to change most things, just by editing html.
+    </p>
+    <p class="lh-copy f5 f4-ns fw3 black-80 mv3 mv4-ns">
+      When you repeat yourself in html, there isn’t any real damage to file size (read:
+      multi-class patterns will not bloat your html). A user doesn’t have to download every html
+      file from your website to view one page. Yet most web sites are architected in a way that
+      require you to download the css for the entire site when you try to view one page. This is a
+      broken model.
+    </p>
+    <p class="lh-copy f5 f4-ns fw3 black-80 mv3 mv4-ns">
+      The files I referenced above are the result of css authors generating really long selectors
+      that add a lot of weight to your cascade to do one or two things. And as time goes on there
+      are more and more things in your cascade to override. So your selectors get longer and
+      longer, your file sizes get bigger and bigger, and the amount of time you spend debugging
+      css is going to go up and up and up.
+    </p>
+    <p class="lh-copy f5 f4-ns fw3 black-80 mv3 mv4-ns">
+      In this model, you will never stop writing css. Refactoring css is hard and time consuming.
+      Deleting unused css is hard and time consuming. And more often than not - it’s not work
+      people are excited to do. So what happens? People keep writing more and more css.
+    </p>
+    <p class="lh-copy f5 f4-ns fw3 black-80 mv3 mv4-ns">
+      This affects scalability in two ways. One, it makes it harder to work on your app because
+      you can't realistically memorize all of the css in your app. And if it isn't internalized it
+      isn't likely to be reused. It also means that your users have an increasing amount of code
+      to download. And if you think “oh but it will never get that bad, gzip will save the day” -
+      well you’re wrong. Pinterest has more than 1mb of uncompressed css spread out over 5 files.
+      Once gzipped it is still a whopping 159kb. <b>That is a lot of css</b>. 97% of it isn’t used
+      on the homepage. I’d rather just try and send my users the 3% they do need.
+    </p>
+    <p class="lh-copy f5 f4-ns fw3 black-80 mv3 mv4-ns">
+      Part of this code bloat is an attachment to authoring ‘content-semantic’ class names.
+      Honestly I’m surprised you can find people that still think this isn’t the worst idea ever.
+      <a class="link dim underline black-80"
+        href="http://nicolasgallagher.com/about-html-semantics-front-end-architecture/">
+        Nicolas Gallagher already wrote the mic drop piece on why this doesn’t work.</a> But for
+      some reason you still find people arguing for its merits as a silver bullet solution.
+      Personally I think most of the internet is unnecessarily broken. So I assume everything we
+      have been taught is most likely wrong.
+    </p>
+    <p class="lh-copy f5 f4-ns fw3 black-80 mv3 mv4-ns">
+      This is where we come to the crux of the problem I have with any system that requires you to
+      map visual styles to components in your css. Content semantics have <b
+      class="sans-serif fw7 ttu tracked">nothing to do with visual styles</b>. When I
+      used to build things with Legos I never thought ‘oh this is a piece for an engine block’ I
+      thought ‘oh cool this is a 1x4 blue lego and I can do anything I want with it’. It didn't
+      matter if I was building an underwater aquanauts base or an airplane - I knew exactly how to
+      use that lego block.
+    </p>
+    <p class="lh-copy f5 f4-ns fw3 black-80 mv3 mv4-ns">
+      It’s all about lego bits. Because I never needed to re-contextualize my understanding of
+      lego blocks. I could use them across ‘projects’ and they were always the same. I dream of
+      this world in front-end development. I want lego blocks that work everywhere because there
+      is serious power in leveraging solutions that are project agnostic.
+    </p>
+    <p class="lh-copy f5 f4-ns fw3 black-80 mv3 mv4-ns">
+      Outside of some brand specific background-images, gradients, and colors etc., the
+      overwhelming majority of css you would need for your site has already been written. Yet we
+      continue as a community to constantly reinvent the wheel. Which is starting to feel like
+      building a camera from scratch every time you want to take a photo. I totally think building
+      cameras from scratch is cool and a worthwhile endeavor. But I don’t want to do it every time
+      I am going to take a photo. I just want to go take photos.
+    </p>
+    <p class="lh-copy f5 f4-ns fw3 black-80 mv3 mv4-ns">
+      When I read about or listen to ideas on how to scale an app’s css - most of the talk is
+      about how to write css. The real way to scale css, is to stop writing css. Abstract out the
+      things you use most and move to a multi-class pattern where you compose visual patterns in
+      your html. You might be amazed at how quickly your team starts to move.
+    </p>
+    <p class="lh-copy f5 f4-ns fw3 black-80 mv3 mv4-ns">
+      There are a lot of problems that come along with people writing css. Inconsistent values,
+      the introduction of magic numbers, duplicate code, non-responsive patterns. I’m sure there
+      are others.
+    </p>
+    <p class="lh-copy f5 f4-ns fw3 black-80 mv3 mv4-ns">
+      If you create a system that is flexible and powerful, and pull from that, you might find
+      your designs to be more harmonious. You might spend less time debugging the cascade. Your
+      pages will probably load faster. But who knows. Maybe that won’t work for you at all. All I
+      know is the current model is definitely not going to work.
+    </p>
+    <p class="lh-copy f5 f4-ns fw3 black-80 mv3 mv4-ns">
+      Writing new css should be the exception, not the rule.
+    </p>
+
+    <h3 class="f3 sans-serif">Parting Thoughts</h3>
+
+    <p class="lh-copy f5 f4-ns fw3 black-80 mv3 mv4-ns">
+      If you have never read your outputted css from start to finish - I recommend it as an
+      amazing way to learn a lot about css and how people use it. After I read salesforce’s css I
+      started reading css in entirety for many sites. I still do this! I learn something new every
+      time.
+    </p>
+    <p class="lh-copy f5 f4-ns fw3 black-80 mv3 mv4-ns">
+      Don’t take this as dogma. The real point of this whole piece is to encourage you to go test
+      your assumptions. Not many people sit with other people building UI and just *observe* how
+      they build out new features or refactor old ones. User-testing is such a great exercise to
+      learn about how people use things. You can learn a lot from people who are great at writing
+      front-end code and also people who are brand new to it. I wouldn’t have learned much of this
+      if I just sat around and tried to solve problems by myself or read all the latest hip blog
+      posts. The reality is lots of people with varying levels of agency will touch your front-end
+      code and you should design a system that works for everyone.
+    </p>
+    <p class="lh-copy f5 f4-ns fw3 black-80 mv3 mv4-ns">
+      Thank you to everyone who has given me feedback on these thoughts over the last few years.
+      And special thanks to the trailblazers that had the guts to challenge existing best
+      practices and gave me the courage to do the same. I'm looking at you
+      <a class="link dim underline black sans-serif"
+        href="http://twitter.com/stubbornella">@stubbornella</a>,
+      <a class="link dim underline black sans-serif" href="http://twitter.com/necolas">
+        @necolas</a>, and <a class="link dim underline black sans-serif"
+      href="http://twitter.com/dam">@dam</a>.
+    </p>
+
+    <aside class="flex flex-wrap items-center justify-start black-70 mv4">
+      <button type="button"
+        class="pointer black-70 f6 tracked-tight sans-serif nowrap bg-light-gray hover-bg-black-20 ba b--none br2 pa2 mr2 mv1">
+        Web Development
+      </button>
+      <button type="button"
+        class="pointer black-70 f6 tracked-tight sans-serif nowrap bg-light-gray hover-bg-black-20 ba b--none br2 pa2 mr2 mv1">
+        Functional CSS
+      </button>
+      <button type="button"
+        class="pointer black-70 f6 tracked-tight sans-serif nowrap bg-light-gray hover-bg-black-20 ba b--none br2 pa2 mr2 mv1">
+        Tachyons
+      </button>
+      <button type="button"
+        class="pointer black-70 f6 tracked-tight sans-serif nowrap bg-light-gray hover-bg-black-20 ba b--none br2 pa2 mr2 mv1">
+        Front-End
+      </button>
+    </aside>
+
+  </article>
+</main>
+
+<footer class="flex items-center justify-center h5 bg-washed-green">
+
+  <h6 class="f7 sans-serif near-black ttu pa2 mv0 mr0">built with
+    <a href="http://tachyons.io/" class="link bg-near-black near-white pa1 tracked-mega no-underline dim">tachyons</a>
+  </h6>
+
+</footer>
+
+</body>
+
+</html>
