@@ -35,6 +35,7 @@ in **much less time**._
   - [Typography](#typography)
   - [Layout](#layout)
   - [Theming](#theming)
++ [Image Placeholder Example](#how-to-create-an-image-placeholder)
 - [Resources](#resources)
   - [Articles](#articles)
   - [Questions and Discussions](#questions-and-discussions)
@@ -603,7 +604,7 @@ Widths are denoted by the `w` class, followed by one of 3 types of _modifiers_:
 Heights are denoted by the `h` class, followed by one of 3 types of _modifiers_:
 + _Numbers scale_ which follows tachyons' powers of two scale mentioned above
   + Starting at `h1` (1rem) to `h5`(16rem)
-  + e.g. `h1` sets the height of the element to the first step in the 
+  + e.g. `h1` sets the height of the element to the first step in the
   height scale (1rem) whereas `h4` sets the height to the fourth step (8rem)
 + _Percentage literals_
   + Starting at `h-25` for `25%` and going up in 25s (e.g. `h-50`, etc) until `h-100`
@@ -659,6 +660,53 @@ Opacity mostly follows a linear pattern `o-` with a number decrementing in multi
 
 In addition, tachyons offers: `o-05`, `o-025` and `o-0`.
 
+## How To Create an Image Placeholder
+
+Often in projects that feature images,
+we want to display a _placeholder_ when no image is availale.
+For example in an e-commerce product, we don't want to have a "blank" `<div>`
+because it's unfriendly to users.
+
+We can _easily_ solve this issue with a bit of HTML and Tachyons:
+```html
+<div class="center bg-light-gray ba b--gray tc"
+  style="width: 800px; height: 300px;">
+  <img class="center pt5"/
+  alt="Placeholder Image - Please upload an appropriate one."
+  src="https://user-images.githubusercontent.com/194400/49571717-f392d480-f931-11e8-96f2-a8d10cfe375e.png">
+  <p class="fw1">This is a placeholder image. <br />
+    Please upload a more relevant one. Ideal dimensions:<br />
+    <b class="fw5">Width: 800 pixels, Height: 300 pixels.</b>
+  </p>
+</div>
+```
+The effect is:
+![image placeholder example](https://user-images.githubusercontent.com/194400/49573332-a57fd000-f935-11e8-9188-7f5a038a18b5.png)
+
+Complete file for this example in:
+[`image-placeholder.html`](https://github.com/dwyl/learn-tachyons/blob/master/image-placeholder.html)
+
+### Break it down:
+
+Let's break down this HTML and the Tachyons classes we have used:
+
++ A `<div>` which we use to "contain" (or "wrap") the image
+and apply the grey background color:
+  + `center` -  _center_ the `<div>` in the page,
+  you can chose your own positioning to suit your needs.
+  + `bg-light-gray` - literally background light gray.
+  + `ba` - border "all" (_all sides of the div_)
+  + `b--gray` - the color of the border, in this case `gray`.
+  + `tc` - "text centre", these abreviations take a bit of learning,
+  but once you know them they make perfect sense.
++ `<img>` a tiny placeholder image
+with an appropriate `alt` text for accessibility.
+  + `center` - same again, to center the image in the container `<div>`
+  + `pt5` - "padding top 5", this is just to add some space.
++ `<p>` we use a paragraph to inform/remind the product owner
+what the ideal dimensions are for the image they should upload.
+  + `fw1` - "font weight 1", used to "fade" the font on the instructions.
+  + `fw5` - "font weight 5", make the pixel dimensions more prominent.
 
 ## Resources
 
