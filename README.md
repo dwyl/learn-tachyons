@@ -706,7 +706,7 @@ with an appropriate `alt` text for accessibility.
 + `<p>` we use a paragraph to inform/remind the product owner
 what the ideal dimensions are for the image they should upload.
   + `fw1` - "font weight 1", used to "fade" the font on the instructions.
-  + `fw5` -
+  + `fw5` - "font weight 5", make the pixel dimensions more prominent.
 
 ## Resources
 
