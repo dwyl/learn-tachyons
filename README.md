@@ -190,10 +190,6 @@ you will need to:
 This 3-step process is slow and _always_ ends up with more
 CSS than if you used pre-existing Tachyons classes. (_see below_) 🌈
 
-<!-- comment out: https://github.com/dwyl/learn-tachyons/pull/50/files#r280993487
->
--->
-
 ### _Bootstrap_ Custom Button (_The Old Way_!)
 
 What if we wanted a button that looks a little different?
