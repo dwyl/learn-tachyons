@@ -190,31 +190,9 @@ you will need to:
 This 3-step process is slow and _always_ ends up with
 CSS than if you used pre-existing Tachyons classes. (_see below_)
 
-> Creating custom CSS definitions might look "fine" for this single instance,
-but when you have a slightly bigger team
-you rapidly get override classes for the previous override classes
-and end up with bloated CSS that nobody can maintain!
-> Run your favourite website through
-> [cssstats.com](https://cssstats.com/stats?url=http%3A%2F%2Fmedium.com&ua=Browser%20Default)
-and see the resulting stats:
-![medium-css-stats-overview](https://user-images.githubusercontent.com/194400/57182109-67aab780-6e93-11e9-877d-64edacf5d6ae.png)
-**`530KB`** of CSS? _How_?
-How many shades of Grey do they need:
-![medium-css-stats-font-colors](https://user-images.githubusercontent.com/194400/57182138-d5ef7a00-6e93-11e9-9b87-b318e597293d.png)
-How many font-sizes...? `54.85px`, `36.72px` `29.92px`? _Really_...? 😕
-![medium-css-stats-font-sizes](https://user-images.githubusercontent.com/194400/57182154-e6075980-6e93-11e9-8c5c-6b3ee76a8cc0.png)
-The intention is not to "bash" Medium,
-most high profile websites/apps have _hideous_ CSS Stats scores.
-This is just indicative of the wider problem.
-_All_ of Tachyons (_which is a complete framework_) is `72kb`
-(_with **everything**_) ...
-Medium is a content publishing company
-whose _one job_ is to present content effectively,
-and has hired some of the most talented designers and spent
-[$132M](https://www.crunchbase.com/organization/medium#section-overview)
-building the platform.
-If Medium can't get their CSS under control, who can?!
-
+<!-- comment out: https://github.com/dwyl/learn-tachyons/pull/50/files#r280993487
+>
+-->
 
 ### _Bootstrap_ Custom Button (_The Old Way_!)
 
