@@ -1,4 +1,4 @@
-# Learn Tachyons
+# Learn Tachyons [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square)](https://github.com/dwyl/learn-tachyons/issues) [![HitCount](http://hits.dwyl.io/dwyl/learn-tachyons.svg)](http://hits.dwyl.io/dwyl/learn-tachyons)
 
 ![tachyons-intro-image](https://cloud.githubusercontent.com/assets/194400/25710569/87726714-30e4-11e7-9532-4a447bd61629.png)
 
@@ -10,7 +10,7 @@ in **much less time**._
 
 <!-- START doctoc -->
 - [_Why_?](#why)
-  - [_30 Second Summary_](#30-second-summary)
+  - [_One Minute Summary_](#one-minute-summary)
 - [What?](#what)
   - [What is _Different_?](#what-is-different)
   - [_Bootstrap_ Custom Button (_The Old Way_!)](#bootstrap-custom-button-the-old-way)
@@ -64,11 +64,11 @@ they _only_ care about their **own _experience_** using the app/website.
 
 ![image](https://cloud.githubusercontent.com/assets/194400/25721528/adec307c-3108-11e7-8f66-10edae56e6f0.png)
 
-### _30 Second Summary_
+### _One Minute Summary_
 
 Through _experience_
 (_building **many web/mobile** apps large and small
-  in teams ranging from 2 - **200 people**_), <br />
+  in teams ranging from 2 - **200 people**_),
 we have found that:
 + _**Hand-writing CSS**_ is _very **time-consuming** and **repetitive**_!
 + Using (_most_) CSS "_frameworks_" results in:
@@ -115,9 +115,19 @@ frameworks known as "***Functional CSS***".
 
 ### What is _Different_?
 
-Here's a some CSS for a bootstrap `primary` button:
+When you use the Bootstrap `primary` button class in your web app,
+it _looks_ simple enough on the surface,
+you simply add the class to your HTML markup.
+Following the example on:
+https://getbootstrap.com/docs/4.0/components/buttons/
+
+```hmtl
+<button type="button" class="btn btn-primary">Primary</button>
+```
 
 ![btn](https://cloud.githubusercontent.com/assets/14013616/20070844/eec73158-a519-11e6-9011-5b8cc14f73ac.png)
+
+Here's is the CSS for that bootstrap `primary` button:
 
 ```css
 .btn-primary {
@@ -157,6 +167,28 @@ and see for yourself:
 What a _monolith_! There are a _lot_ of CSS attributes there; <br />
 Bootstrap is quite ***opinionated*** about how a button should
 look and function.
+
+If you want to change/customise any aspect
+of the button
+(_e.g: [font](https://www.cssfontstack.com/Helvetica) or
+[color](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value)_),
+you will need to:
+1. Create a new class in your `app.css` file
+(_or whatever your project calls it_)
+2. Define the CSS styles for that custom attribute, e.g:
+```css
+.custom-btn-purple-helvetica {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #800080; /* wikipedia.org/wiki/The_Color_Purple */
+}
+```
+3. Add the CSS class to the instance of the button you created.
+```html
+<button type="button" class="btn btn-primary custom-btn-purple-helvetica">
+  Primary</button>
+```
+This 3-step process is slow and _always_ ends up with more
+CSS than if you used pre-existing Tachyons classes. (_see below_) 🌈
 
 ### _Bootstrap_ Custom Button (_The Old Way_!)
 
@@ -222,7 +254,6 @@ that we can _re-use_ for any elements that require the teal background.
 ### What is "_Functional_" CSS?
 
 ![fcss](https://cloud.githubusercontent.com/assets/194400/25721674/33bc13ac-3109-11e7-89a6-b8f09f0f4417.png)
-
 
 
 You may be thinking:
@@ -344,6 +375,7 @@ If you know CSS, you know tachyons!
 If you find the names too terse you can use the
 [verbose version](https://github.com/tachyons-css/tachyons-display-verbose).
 
+
 ### _Mobile First_ Responsive Design
 
 By far one of the most useful features is
@@ -430,6 +462,13 @@ Getting started with Tachyons is as easy as 1, 2, 3!
 We've created some examples for you to play around with
 before you decide to use it on your own projects.
 
+> If you want to see a quick-reference guide to Tachyons with detailed examples,
+checkout our Clone of Bootstrap in Tachyons:
+***Tachyons Bootstrap***: https://tachyons-bootstrap.dwyl.com
+
+If you want to learn hands-on follow this tutorial
+start by cloning and running it on your `localhost`.
+
 #### 1. Clone this Repository
 
 ```sh
@@ -450,7 +489,7 @@ edit one of the classes:
 ![button example red](https://cloud.githubusercontent.com/assets/194400/25722704/00d32c6a-310d-11e7-9065-1151a0d16e80.png)
 
 
-#### Optional: Install "Live Server" for "_Live Reloading_"
+#### _Optional_: Install "Live Server" for "_Live Reloading_"
 
 If you prefer not to have to _manually_ refresh the page each time,
 simply run the following command:
@@ -715,6 +754,8 @@ what the ideal dimensions are for the image they should upload.
 + [Tachyons Github Repo](https://github.com/tachyons-css/tachyons/) : https://github.com/tachyons-css/tachyons/
 + [Tachyons Verbose Version](https://github.com/tachyons-css/tachyons-display-verbose) : https://github.com/tachyons-css/tachyons-display-verbose
 + [Setting up Custom Tachyons Build](https://vimeo.com/174698456)
++ Tachyons Bootstrap Examples: https://tachyons-bootstrap.dwyl.com/
++ Cheat Sheet: https://roperzh.github.io/tachyons-cheatsheet
 
 ### Articles
 
