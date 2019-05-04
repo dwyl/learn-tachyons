@@ -187,8 +187,8 @@ you will need to:
 <button type="button" class="btn btn-primary custom-btn-purple-helvetica">
   Primary</button>
 ```
-This 3-step process is slow and _always_ ends up with
-CSS than if you used pre-existing Tachyons classes. (_see below_)
+This 3-step process is slow and _always_ ends up with more
+CSS than if you used pre-existing Tachyons classes. (_see below_) 🌈
 
 <!-- comment out: https://github.com/dwyl/learn-tachyons/pull/50/files#r280993487
 >
