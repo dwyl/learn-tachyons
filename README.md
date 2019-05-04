@@ -1,4 +1,4 @@
-# Learn Tachyons
+# Learn Tachyons [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square)](https://github.com/dwyl/learn-tachyons/issues) [![HitCount](http://hits.dwyl.io/dwyl/learn-tachyons.svg)](http://hits.dwyl.io/dwyl/learn-tachyons)
 
 ![tachyons-intro-image](https://cloud.githubusercontent.com/assets/194400/25710569/87726714-30e4-11e7-9532-4a447bd61629.png)
 
@@ -777,7 +777,7 @@ what the ideal dimensions are for the image they should upload.
 + [Tachyons Github Repo](https://github.com/tachyons-css/tachyons/) : https://github.com/tachyons-css/tachyons/
 + [Tachyons Verbose Version](https://github.com/tachyons-css/tachyons-display-verbose) : https://github.com/tachyons-css/tachyons-display-verbose
 + [Setting up Custom Tachyons Build](https://vimeo.com/174698456)
-+ Tachyons Bootstrap Examples: https://tachyons-bootstrap.dwyl.com
++ Tachyons Bootstrap Examples: https://#
 + Cheat Sheet: https://roperzh.github.io/tachyons-cheatsheet
 
 ### Articles
