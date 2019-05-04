@@ -470,7 +470,8 @@ before you decide to use it on your own projects.
 checkout our Clone of Bootstrap in Tachyons:
 ***Tachyons Bootstrap***: https://tachyons-bootstrap.dwyl.com
 
-If you want to learn hands-on follow this
+If you want to learn hands-on follow this tutorial
+start by cloning and running it on your `localhost`.
 
 #### 1. Clone this Repository
 
@@ -492,7 +493,7 @@ edit one of the classes:
 ![button example red](https://cloud.githubusercontent.com/assets/194400/25722704/00d32c6a-310d-11e7-9065-1151a0d16e80.png)
 
 
-#### Optional: Install "Live Server" for "_Live Reloading_"
+#### _Optional_: Install "Live Server" for "_Live Reloading_"
 
 If you prefer not to have to _manually_ refresh the page each time,
 simply run the following command:
