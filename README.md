@@ -10,7 +10,7 @@ in **much less time**._
 
 <!-- START doctoc -->
 - [_Why_?](#why)
-  - [_30 Second Summary_](#30-second-summary)
+  - [_One Minute Summary_](#one-minute-summary)
 - [What?](#what)
   - [What is _Different_?](#what-is-different)
   - [_Bootstrap_ Custom Button (_The Old Way_!)](#bootstrap-custom-button-the-old-way)
@@ -64,11 +64,11 @@ they _only_ care about their **own _experience_** using the app/website.
 
 ![image](https://cloud.githubusercontent.com/assets/194400/25721528/adec307c-3108-11e7-8f66-10edae56e6f0.png)
 
-### _30 Second Summary_
+### _One Minute Summary_
 
 Through _experience_
 (_building **many web/mobile** apps large and small
-  in teams ranging from 2 - **200 people**_), <br />
+  in teams ranging from 2 - **200 people**_),
 we have found that:
 + _**Hand-writing CSS**_ is _very **time-consuming** and **repetitive**_!
 + Using (_most_) CSS "_frameworks_" results in:
@@ -115,9 +115,19 @@ frameworks known as "***Functional CSS***".
 
 ### What is _Different_?
 
-Here's a some CSS for a bootstrap `primary` button:
+When you use the Bootstrap `primary` button class in your web app,
+it _looks_ simple enough on the surface,
+you simply add the class to your HTML markup.
+Following the example on:
+https://getbootstrap.com/docs/4.0/components/buttons/
+
+```hmtl
+<button type="button" class="btn btn-primary">Primary</button>
+```
 
 ![btn](https://cloud.githubusercontent.com/assets/14013616/20070844/eec73158-a519-11e6-9011-5b8cc14f73ac.png)
+
+Here's is the CSS for that bootstrap `primary` button:
 
 ```css
 .btn-primary {
@@ -157,6 +167,52 @@ and see for yourself:
 What a _monolith_! There are a _lot_ of CSS attributes there; <br />
 Bootstrap is quite ***opinionated*** about how a button should
 look and function.
+
+If you want to change/customise any aspect
+of the button
+(_e.g: [font](https://www.cssfontstack.com/Helvetica) or
+[color](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value)_),
+you will need to:
+1. Create a new class in your `app.css` file
+(_or whatever your project calls it_) e.g:
+2. Degine the CSS styles for that custom attribute:
+```css
+.custom-btn-purple-helvetica {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #800080; /* wikipedia.org/wiki/The_Color_Purple */
+}
+```
+add the CSS class to the instance of the button you created.
+```html
+<button type="button" class="btn btn-primary custom-btn-purple-helvetica">
+  Primary</button>
+```
+
+> This looks "fine" for this single instance,
+but when you have a slightly bigger team
+you rapidly get override classes for the previous override classes
+and end up with bloated CSS that nobody can maintain!
+> Run your favourite website thorugh
+> [cssstats.com](https://cssstats.com/stats?url=http%3A%2F%2Fmedium.com&ua=Browser%20Default)
+and see the resulting stats:
+![medium-css-stats-overview](https://user-images.githubusercontent.com/194400/57182109-67aab780-6e93-11e9-877d-64edacf5d6ae.png)
+**`530KB`** of CSS? _How_?
+How many shades of Grey do they need:
+![medium-css-stats-font-colors](https://user-images.githubusercontent.com/194400/57182138-d5ef7a00-6e93-11e9-9b87-b318e597293d.png)
+How many font-sizes...? `54.85px`, `36.72px` `29.92px`? _Really_...? 😕
+![medium-css-stats-font-sizes](https://user-images.githubusercontent.com/194400/57182154-e6075980-6e93-11e9-8c5c-6b3ee76a8cc0.png)
+The intention is not to "bash" Medium,
+most high profile websites/apps have _hideous_ CSS Stats scores.
+This is just indicative of the wider problem.
+_All_ of Tachyons (_which is a complete framework_) is `72kb`
+(_with **everything**_) ...
+If a content publishing company
+whose _one job_ is to present content effectively,
+and has hired some of the most talented designers and spent
+[$132M](https://www.crunchbase.com/organization/medium#section-overview)
+building the platform, if Medium can't get their CSS under control,
+who can?!
+
 
 ### _Bootstrap_ Custom Button (_The Old Way_!)
 
@@ -222,7 +278,6 @@ that we can _re-use_ for any elements that require the teal background.
 ### What is "_Functional_" CSS?
 
 ![fcss](https://cloud.githubusercontent.com/assets/194400/25721674/33bc13ac-3109-11e7-89a6-b8f09f0f4417.png)
-
 
 
 You may be thinking:
