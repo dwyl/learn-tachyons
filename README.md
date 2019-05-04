@@ -770,6 +770,7 @@ what the ideal dimensions are for the image they should upload.
 + [Tachyons Github Repo](https://github.com/tachyons-css/tachyons/) : https://github.com/tachyons-css/tachyons/
 + [Tachyons Verbose Version](https://github.com/tachyons-css/tachyons-display-verbose) : https://github.com/tachyons-css/tachyons-display-verbose
 + [Setting up Custom Tachyons Build](https://vimeo.com/174698456)
++ Cheat Sheet: https://roperzh.github.io/tachyons-cheatsheet
 
 ### Articles
 
