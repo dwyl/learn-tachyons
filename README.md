@@ -174,25 +174,27 @@ of the button
 [color](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value)_),
 you will need to:
 1. Create a new class in your `app.css` file
-(_or whatever your project calls it_) e.g:
-2. Degine the CSS styles for that custom attribute:
+(_or whatever your project calls it_)
+2. Define the CSS styles for that custom attribute, e.g:
 ```css
 .custom-btn-purple-helvetica {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #800080; /* wikipedia.org/wiki/The_Color_Purple */
 }
 ```
-add the CSS class to the instance of the button you created.
+3. Add the CSS class to the instance of the button you created.
 ```html
 <button type="button" class="btn btn-primary custom-btn-purple-helvetica">
   Primary</button>
 ```
+This 3-step process is slow and _always_ ends up with
+CSS than if you used pre-existing Tachyons classes. (_see below_)
 
-> This looks "fine" for this single instance,
+> Creating custom CSS definitions might look "fine" for this single instance,
 but when you have a slightly bigger team
 you rapidly get override classes for the previous override classes
 and end up with bloated CSS that nobody can maintain!
-> Run your favourite website thorugh
+> Run your favourite website through
 > [cssstats.com](https://cssstats.com/stats?url=http%3A%2F%2Fmedium.com&ua=Browser%20Default)
 and see the resulting stats:
 ![medium-css-stats-overview](https://user-images.githubusercontent.com/194400/57182109-67aab780-6e93-11e9-877d-64edacf5d6ae.png)
@@ -206,12 +208,12 @@ most high profile websites/apps have _hideous_ CSS Stats scores.
 This is just indicative of the wider problem.
 _All_ of Tachyons (_which is a complete framework_) is `72kb`
 (_with **everything**_) ...
-If a content publishing company
+Medium is a content publishing company
 whose _one job_ is to present content effectively,
 and has hired some of the most talented designers and spent
 [$132M](https://www.crunchbase.com/organization/medium#section-overview)
-building the platform, if Medium can't get their CSS under control,
-who can?!
+building the platform.
+If Medium can't get their CSS under control, who can?!
 
 
 ### _Bootstrap_ Custom Button (_The Old Way_!)
