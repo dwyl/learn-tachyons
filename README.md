@@ -399,6 +399,7 @@ If you know CSS, you know tachyons!
 If you find the names too terse you can use the
 [verbose version](https://github.com/tachyons-css/tachyons-display-verbose).
 
+
 ### _Mobile First_ Responsive Design
 
 By far one of the most useful features is
@@ -484,6 +485,12 @@ and can greatly reduce jank in a complicated ui." -
 Getting started with Tachyons is as easy as 1, 2, 3!
 We've created some examples for you to play around with
 before you decide to use it on your own projects.
+
+> If you want to see a quick-reference guide to Tachyons with detailed examples,
+checkout our Clone of Bootstrap in Tachyons:
+***Tachyons Bootstrap***: https://tachyons-bootstrap.dwyl.com
+
+If you want to learn hands-on follow this
 
 #### 1. Clone this Repository
 
@@ -770,6 +777,7 @@ what the ideal dimensions are for the image they should upload.
 + [Tachyons Github Repo](https://github.com/tachyons-css/tachyons/) : https://github.com/tachyons-css/tachyons/
 + [Tachyons Verbose Version](https://github.com/tachyons-css/tachyons-display-verbose) : https://github.com/tachyons-css/tachyons-display-verbose
 + [Setting up Custom Tachyons Build](https://vimeo.com/174698456)
++ Tachyons Bootstrap Examples: https://tachyons-bootstrap.dwyl.com
 + Cheat Sheet: https://roperzh.github.io/tachyons-cheatsheet
 
 ### Articles
