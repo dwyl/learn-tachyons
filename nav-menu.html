@@ -11,7 +11,7 @@
   </head>
   <body class="debug-grid helvetica">
 
-    <nav class="w-100 fixed top-0 bg-dark-gray debug">
+    <nav class="w-100 fixed top-0 bg-dark-gray">
       <!-- burger menu controlled by invisible checkbox -->
       <input type="checkbox" id="burger" class="dn">
       <label for="burger" class="dn-l fr pr5 f2">
@@ -32,9 +32,9 @@
         <li class="pl5 pl6-m di-l tl pb2-m">
           <a href="#contact" id="contact-link" class="white link">Contact</a>
         </li>
-        <li class="pl6-m tl dn-l pb2-m">
+        <li class="pl6-m tl dn-l pb3"> <!-- example of mobile-only menu item -->
           <a href="https://youtu.be/dQw4w9WgXcQ"
-            class="white link">Mobile Only!</a>
+            class="white link">S'up?</a>
         </li>
       </ul>
     </nav>
@@ -42,11 +42,11 @@
     <!-- custom styles not available in taychons -->
     <style>
       .menu {
-        min-height: 2.8rem;
-        max-height: 0;
-        transition: max-height 0.5s;
+        min-height: 2.8rem; /* no way to control min height in Tachyons */
+        max-height: 0; /* hide menu completely when burger unchecked */
+        transition: max-height 0.5s; /* show/hide menu transition */
       }
-
+      /* when checkbox is checked, display menu (sibling element) */
       #burger:checked ~ .menu {
         max-height: 100%;
       }
