@@ -750,8 +750,10 @@ what the ideal dimensions are for the image they should upload.
 
 ## Responsive Navigation Menu
 
-Let's create a responsive navigation menu in pure CSS!
+Let's create a responsive navigation menu with _only_ HTML and CSS classes!
 
+Relevant to this quest is understanding the Tachyons display system:
+https://tachyons.io/docs/layout/display
 
 
 

@@ -5,37 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <title>Image Placeholder Example</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="shortcut icon" type="image/png" href="http://www.dwyl.io/img/favicon.ico"/>
   </head>
   <body class="debug-grid helvetica">
 
-    <nav class="w-100 tc white fixed top-0 bg-dark-gray z-3 shadow-5">
-      <input type="checkbox" id="burger" class="absolute top-2 right-1 dn">
-      <label for="burger" class="dn-l pointer absolute top-1 right-1">
-        <i class="fa fa-bars white dib f1"></i>
+    <nav class="w-100 fixed top-0 bg-dark-gray debug">
+      <!-- burger menu controlled by invisible checkbox -->
+      <input type="checkbox" id="burger" class="dn">
+      <label for="burger" class="dn-l fr pr5 f2">
+        <i class="fa fa-bars white"></i>
       </label>
-      <ul class="menu overflow-hidden db-l w-100 list tc mv0 f2 fw3 f4-l">
-        <li class="absolute top-1 static-l ph4 mh2 fw3 di-l pt2-l">
-          <a href="/nav-menu.html" class="white link">
-            <img src="https://dwyl.com/img/favicon-32x32.png"
-            alt="dwyl heart logo" class="w1-plus"/>
+      <ul class="menu overflow-hidden db-l w-100-l w-70 list pa0 ma0 mt1-l pt1 f2 f3-l">
+        <li class="fl pl5 pl6-l">
+          <a href="/nav-menu.html">
+            <img src="https://dwyl.com/img/favicon-32x32.png" alt="dwyl logo"/>
           </a>
         </li>
-        <li class="ph4 pt5 tl dn-l pb2">
-          <a href="#" class="white link">Home</a>
-        </li>
-        <li class="ph4 di-l tl pb2">
+        <li class="di-l pl6 tl pt5-m pb2-m">
           <a href="#" class="white link">Portfolio</a>
         </li>
-        <li class="ph4 di-l tl pb2">
+        <li class="pl5 pl6-m di-l tl pb2-m">
           <a href="#" class="white link">Blog</a>
         </li>
-        <li class="ph4 di-l pb3 tl pb2">
+        <li class="pl5 pl6-m di-l tl pb2-m">
           <a href="#contact" id="contact-link" class="white link">Contact</a>
         </li>
-        <li class="ph4 pb2 tl dn-l">
+        <li class="pl6-m tl dn-l pb2-m">
           <a href="https://youtu.be/dQw4w9WgXcQ"
             class="white link">Mobile Only!</a>
         </li>
@@ -45,7 +42,7 @@
     <!-- custom styles not available in taychons -->
     <style>
       .menu {
-        min-height: 4rem;
+        min-height: 2.8rem;
         max-height: 0;
         transition: max-height 0.5s;
       }
@@ -54,7 +51,7 @@
         max-height: 100%;
       }
     </style>
-    <div id="main" class="pt5">
+    <div id="main" class="pt4">
       <h1 class="tc">Responsive CSS <em>Only</em> "Burger" Navigation Menu </h1>
       <p class="ph4 mid-gray">
         Responsive Web Design (RWD) is an approach to web design
