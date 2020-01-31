@@ -825,7 +825,7 @@ The _full_ code for creating a responsive nav is:
 
 Relevant to this quest is understanding the Tachyons display system:
 https://tachyons.io/docs/layout/display
-_Specifically_, the understand that
+_Specifically_, understanding that
 when the suffix `-m` is appended to a class
 it means it only applies to the mobile view.
 e.g: `pt5-m` means "_padding top level 5 mobile only_"
