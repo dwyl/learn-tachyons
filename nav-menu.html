@@ -6,44 +6,102 @@
     <title>Image Placeholder Example</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="shortcut icon" type="image/png" href="http://www.dwyl.io/img/favicon.ico"/>
   </head>
-  <body class="debug-grid helvetica debug">
+  <body class="debug-grid helvetica">
 
-    <nav class="w-100 tc white fixed bg-dark-gray z-3 shadow-5">
+    <nav class="w-100 tc white fixed top-0 bg-dark-gray z-3 shadow-5">
       <input type="checkbox" id="burger" class="absolute top-2 right-1 dn">
       <label for="burger" class="dn-l pointer absolute top-1 right-1">
-        <i class="fa fa-bars white dib f2"></i>
+        <i class="fa fa-bars white dib f1"></i>
       </label>
-      <ul class="overflow-hidden menu db-l w-100 list tc pl0 pt3 mv0 f3 fw3 f5-l">
-        <li class="absolute top-1 static-l ph4 mh2 fw3 di-l pt1 pb3 pv3-l">
-          <a href="/" class="white link">
+      <ul class="menu overflow-hidden db-l w-100 list tc mv0 f2 fw3 f4-l">
+        <li class="absolute top-1 static-l ph4 mh2 fw3 di-l pt2-l">
+          <a href="/nav-menu.html" class="white link">
             <img src="https://dwyl.com/img/favicon-32x32.png"
             alt="dwyl heart logo" class="w1-plus"/>
           </a>
         </li>
-        <li class="ph4 pt5 pb2 tl dn-l"><a href="/" class="white link">Home</a></li>
-        <li class="ph4 di-l pv2 tl pv0-l"><a href="/portfolio" class="white link">Portfolio</a></li>
-        <li class="ph4 di-l pv2 tl pv0-l"><a href="/values" class="white link">Values</a></li>
-        <li class="ph4 di-l pv2 tl pv0-l"><a href="/team" class="white link">Team</a></li>
-        <!-- <li class="ph4 di-l pv2 tl pv0-l"><a href="/blog" class="white link">Blog</a></li> -->
-        <li class="ph4 di-l pt2 pb3 tl pv0-l"><a href="#contact" id="contact-link" class="white link">Contact</a></li>
+        <li class="ph4 pt5 tl dn-l pb2">
+          <a href="#" class="white link">Home</a>
+        </li>
+        <li class="ph4 di-l tl pb2">
+          <a href="#" class="white link">Portfolio</a>
+        </li>
+        <li class="ph4 di-l tl pb2">
+          <a href="#" class="white link">Blog</a>
+        </li>
+        <li class="ph4 di-l pb3 tl pb2">
+          <a href="#contact" id="contact-link" class="white link">Contact</a>
+        </li>
+        <li class="ph4 pb2 tl dn-l">
+          <a href="https://youtu.be/dQw4w9WgXcQ"
+            class="white link">Mobile Only!</a>
+        </li>
       </ul>
     </nav>
 
-    <h1 class="tc"> CSS Burger Menu Navigation </h1>
+    <!-- custom styles not available in taychons -->
+    <style>
+      .menu {
+        min-height: 4rem;
+        max-height: 0;
+        transition: max-height 0.5s;
+      }
 
+      #burger:checked ~ .menu {
+        max-height: 100%;
+      }
+    </style>
+    <div id="main" class="pt5">
+      <h1 class="tc">Responsive CSS <em>Only</em> "Burger" Navigation Menu </h1>
+      <p class="ph4 mid-gray">
+        Responsive Web Design (RWD) is an approach to web design
+        that makes web pages render well on a variety of devices
+        and window or screen sizes.
+        Content, design and performance are necessary
+        across all devices to ensure usability and satisfaction.
+        <a href="https://en.wikipedia.org/wiki/Responsive_web_design"
+          class="link dark-blue">
+          wikipedia.org/wiki/Responsive_web_design</a>
+      </p>
 
+      <p class="ph4 gray">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+        in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+        nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+        sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
 
+      <p class="ph4 moon-gray">
+      Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+      accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+      quae ab illo inventore veritatis et quasi architecto beatae vitae
+      dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
+      sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+      dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
+      quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+      adipisci velit, sed quia non numquam eius modi tempora incidunt
+      ut labore et dolore magnam aliquam quaerat voluptatem.
+      Ut enim ad minima veniam, quis nostrum exercitationem ullam
+      corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
+      consequatur? Quis autem vel eum iure reprehenderit qui in ea
+      voluptate velit esse quam nihil molestiae consequatur, vel illum
+      qui dolorem eum fugiat quo voluptas nulla pariatur?"
+      </p>
+    </div>
 
-
-
-    <!-- ignore this, it's just for debugging -->
-    <footer class="fixed bottom-1 ba b--gray ph2 ml3 w-40 bg-dark-gray white">
-      <p>Resize browser window to fire <code class="green">resize</code> event.</p>
-      <p>Window height: <strong class="green" id="height"></strong> px</p>
-      <p>Window width: <strong class="green" id="width"></strong> px</p>
+    <!-- A floaty box to show viewport height and width for debugging -->
+    <footer class="fixed bottom-1 ba b--gray ph2 ml4 w-30 bg-dark-gray white">
+      <p>Viewport dimensions:
+      <p>Height: <strong class="green" id="height"></strong> px</p>
+      <p>Width: <strong class="green" id="width"></strong> px</p>
       <script>
+      // https://developer.mozilla.org/en-US/docs/Web/API/Window/resize_event
       (function(){
         const heightOutput = document.querySelector('#height');
         const widthOutput = document.querySelector('#width');
