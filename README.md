@@ -834,7 +834,9 @@ it means the
 e.g: `mt1-l` means "_margin top 1 only large screens_"
 
 If you want to see this nav in action,
-
+run `npm start`
+and visit:
+http://127.0.0.1:8000/examples/nav-menu.html
 
 
 ## Resources
