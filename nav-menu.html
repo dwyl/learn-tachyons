@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>Image Placeholder Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css">
+    <link rel="shortcut icon" type="image/png" href="http://www.dwyl.io/img/favicon.ico"/>
+  </head>
+  <body class="debug-grid helvetica debug">
+    <h1 class="tc"> CSS Burger Menu Navigation </h1>
+
+
+
+    <!-- ignore this, it's just for debugging -->
+    <footer class="fixed bottom-1 ba b--gray ph2 ml3 w-40 bg-dark-gray white">
+      <p>Resize browser window to fire <code class="green">resize</code> event.</p>
+      <p>Window height: <strong class="green" id="height"></strong> px</p>
+      <p>Window width: <strong class="green" id="width"></strong> px</p>
+      <script>
+      (function(){
+        const heightOutput = document.querySelector('#height');
+        const widthOutput = document.querySelector('#width');
+        function reportWindowSize() {
+          heightOutput.textContent = window.innerHeight;
+          widthOutput.textContent = window.innerWidth;
+        }
+        window.onresize = reportWindowSize;
+        reportWindowSize(); // init
+      })();
+      </script>
+    </footer>
+    <!-- debug grid for learning CSS positioning! http://tachyons.io/xray -->
+    <link rel="stylesheet"
+    href="https://unpkg.com/tachyons-debug-grid@1.2.3/css/tachyons-debug-grid.min.css" />
+  </body>
+</html>
