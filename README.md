@@ -750,7 +750,7 @@ what the ideal dimensions are for the image they should upload.
 
 To view this in action,
 run
-`npm satart`
+`npm start`
 and visit:
 http://127.0.0.1:8000/examples/image-placeholder.html
 
