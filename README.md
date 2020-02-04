@@ -36,6 +36,7 @@ in **much less time**._
   - [Layout](#layout)
   - [Theming](#theming)
 + [Image Placeholder Example](#how-to-create-an-image-placeholder)
++ [Responsive Navigation Menu Example](#responsive-navigation-menu)
 - [Resources](#resources)
   - [Articles](#articles)
   - [Questions and Discussions](#questions-and-discussions)
@@ -702,7 +703,7 @@ In addition, tachyons offers: `o-05`, `o-025` and `o-0`.
 ## How To Create an Image Placeholder
 
 Often in projects that feature images,
-we want to display a _placeholder_ when no image is availale.
+we want to display a _placeholder_ when no image is available.
 For example in an e-commerce product, we don't want to have a "blank" `<div>`
 because it's unfriendly to users.
 
@@ -746,6 +747,97 @@ with an appropriate `alt` text for accessibility.
 what the ideal dimensions are for the image they should upload.
   + `fw1` - "font weight 1", used to "fade" the font on the instructions.
   + `fw5` - "font weight 5", make the pixel dimensions more prominent.
+
+To view this in action,
+run
+`npm start`
+and visit:
+http://127.0.0.1:8000/examples/image-placeholder.html
+
+
+## Responsive Navigation Menu
+
+Let's create a responsive navigation menu with _only_ HTML and CSS!
+
+This is what you can expect in the desktop view:
+
+![desktop-view-nav-menu](https://user-images.githubusercontent.com/194400/73554472-aa5de800-4443-11ea-941e-46c0d5c61337.png)
+
+And this is what it looks like in a constrained (_mobile_) view:
+
+![mobile-view-burger-nav-menu](https://user-images.githubusercontent.com/194400/73554480-ae8a0580-4443-11ea-9253-cf9d231c29c6.png)
+
+The _expanded_ burger menu:
+
+![mobile-view-burger-nav-menu](https://user-images.githubusercontent.com/194400/73554487-b2b62300-4443-11ea-981a-cf26e3818688.png)
+
+This CSS-only (_no `JavaScript` required!_) responsive navigation menu
+relies on [Isabel Castillo](https://github.com/isabelc)'s
+brilliant _hidden_ `checkbox` idea:
+https://isabelcastillo.com/pure-css-mobile-toggle-menu
+(shared by @iteles in
+  [github.com/dwyl/learn-tachyons/issues/10](https://github.com/dwyl/learn-tachyons/issues/10#issuecomment-304724294)❤️)
+
+The _full_ code for creating a responsive nav is:
+
+```HTML
+<nav class="w-100 fixed top-0 bg-dark-gray">
+  <!-- burger menu controlled by invisible checkbox -->
+  <input type="checkbox" id="burger" class="dn">
+  <label for="burger" class="dn-l fr pr5 f2">
+    <i class="fa fa-bars white"></i>
+  </label>
+  <ul class="menu overflow-hidden db-l w-100-l w-70 list pa0 ma0 mt1-l pt1 f2 f3-l">
+    <li class="fl pl5 pl6-l">
+      <a href="/nav-menu.html">
+        <img src="https://dwyl.com/img/favicon-32x32.png" alt="dwyl logo"/>
+      </a>
+    </li>
+    <li class="di-l pl6 tl pt5-m pb2-m">
+      <a href="#" class="white link">Portfolio</a>
+    </li>
+    <li class="pl5 pl6-m di-l tl pb2-m">
+      <a href="#" class="white link">Blog</a>
+    </li>
+    <li class="pl5 pl6-m di-l tl pb2-m">
+      <a href="#contact" id="contact-link" class="white link">Contact</a>
+    </li>
+    <li class="pl6-m tl dn-l pb3"> <!-- example of mobile-only menu item -->
+      <a href="https://youtu.be/dQw4w9WgXcQ"
+        class="white link">S'up?</a>
+    </li>
+  </ul>
+</nav>
+
+<!-- custom styles not available in taychons -->
+<style>
+  .menu {
+    min-height: 2.8rem; /* no way to control min height in Tachyons */
+    max-height: 0; /* hide menu completely when burger unchecked */
+    transition: max-height 0.5s; /* show/hide menu transition */
+  }
+  /* when checkbox is checked, display menu (sibling element) */
+  #burger:checked ~ .menu {
+    max-height: 100%;
+  }
+</style>
+```
+
+Relevant to this quest is understanding the Tachyons display system:
+https://tachyons.io/docs/layout/display
+_Specifically_, understanding that
+when the suffix `-m` is appended to a class
+it means it only applies to the mobile view.
+e.g: `pt5-m` means "_padding top level 5 mobile only_"
+Likewise when the `-l` suffix is appended to a given class name,
+it means the
+e.g: `mt1-l` means "_margin top 1 only large screens_"
+
+If you want to see this nav in action,
+run `npm start`
+and visit:
+http://127.0.0.1:8000/examples/nav-menu.html
+
 
 ## Resources
 

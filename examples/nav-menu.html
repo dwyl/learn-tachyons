@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>Image Placeholder Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/png" href="http://www.dwyl.io/img/favicon.ico"/>
+  </head>
+  <body class="debug-grid helvetica">
+
+    <nav class="w-100 fixed top-0 bg-dark-gray">
+      <!-- burger menu controlled by invisible checkbox -->
+      <input type="checkbox" id="burger" class="dn">
+      <label for="burger" class="dn-l fr pr5 f2">
+        <i class="fa fa-bars white"></i>
+      </label>
+      <ul class="menu overflow-hidden db-l w-100-l w-70 list pa0 ma0 mt1-l pt1 f2 f3-l">
+        <li class="fl pl5 pl6-l">
+          <a href="/nav-menu.html">
+            <img src="https://dwyl.com/img/favicon-32x32.png" alt="dwyl logo"/>
+          </a>
+        </li>
+        <li class="di-l pl6 tl pt5-m pb2-m">
+          <a href="#" class="white link">Portfolio</a>
+        </li>
+        <li class="pl5 pl6-m di-l tl pb2-m">
+          <a href="#" class="white link">Blog</a>
+        </li>
+        <li class="pl5 pl6-m di-l tl pb2-m">
+          <a href="#contact" id="contact-link" class="white link">Contact</a>
+        </li>
+        <li class="pl6-m tl dn-l pb3"> <!-- example of mobile-only menu item -->
+          <a href="https://youtu.be/dQw4w9WgXcQ"
+            class="white link">S'up?</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- custom styles not available in taychons -->
+    <style>
+      .menu {
+        min-height: 2.8rem; /* no way to control min height in Tachyons */
+        max-height: 0; /* hide menu completely when burger unchecked */
+        transition: max-height 0.5s; /* show/hide menu transition */
+      }
+      /* when checkbox is checked, display menu (sibling element) */
+      #burger:checked ~ .menu {
+        max-height: 100%;
+      }
+    </style>
+    <div id="main" class="pt4">
+      <h1 class="tc">Responsive CSS <em>Only</em> "Burger" Navigation Menu </h1>
+      <p class="ph4 mid-gray">
+        Responsive Web Design (RWD) is an approach to web design
+        that makes web pages render well on a variety of devices
+        and window or screen sizes.
+        Content, design and performance are necessary
+        across all devices to ensure usability and satisfaction.
+        <a href="https://en.wikipedia.org/wiki/Responsive_web_design"
+          class="link dark-blue">
+          wikipedia.org/wiki/Responsive_web_design</a>
+      </p>
+
+      <p class="ph4 gray">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+        in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+        nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+        sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+
+      <p class="ph4 moon-gray">
+      Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+      accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+      quae ab illo inventore veritatis et quasi architecto beatae vitae
+      dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
+      sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+      dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
+      quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+      adipisci velit, sed quia non numquam eius modi tempora incidunt
+      ut labore et dolore magnam aliquam quaerat voluptatem.
+      Ut enim ad minima veniam, quis nostrum exercitationem ullam
+      corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
+      consequatur? Quis autem vel eum iure reprehenderit qui in ea
+      voluptate velit esse quam nihil molestiae consequatur, vel illum
+      qui dolorem eum fugiat quo voluptas nulla pariatur?"
+      </p>
+    </div>
+
+    <!-- A floaty box to show viewport height and width for debugging -->
+    <footer class="fixed bottom-1 ba b--gray ph2 ml4 w-30 bg-dark-gray white">
+      <p>Viewport dimensions:
+      <p>Height: <strong class="green" id="height"></strong> px</p>
+      <p>Width: <strong class="green" id="width"></strong> px</p>
+      <script>
+      // https://developer.mozilla.org/en-US/docs/Web/API/Window/resize_event
+      (function(){
+        const heightOutput = document.querySelector('#height');
+        const widthOutput = document.querySelector('#width');
+        function reportWindowSize() {
+          heightOutput.textContent = window.innerHeight;
+          widthOutput.textContent = window.innerWidth;
+        }
+        window.onresize = reportWindowSize;
+        reportWindowSize(); // init
+      })();
+      </script>
+    </footer>
+    <!-- debug grid for learning CSS positioning! http://tachyons.io/xray -->
+    <link rel="stylesheet"
+    href="https://unpkg.com/tachyons-debug-grid@1.2.3/css/tachyons-debug-grid.min.css" />
+  </body>
+</html>
