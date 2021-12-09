@@ -1,4 +1,4 @@
-# Learn Tachyons [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square)](https://github.com/dwyl/learn-tachyons/issues) [![HitCount](http://hits.dwyl.io/dwyl/learn-tachyons.svg)](http://hits.dwyl.io/dwyl/learn-tachyons)
+# Learn Tachyons [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square)](https://github.com/dwyl/learn-tachyons/issues) [![HitCount](http://hits.dwyl.com/dwyl/learn-tachyons.svg?style=flat-square)](http://hits.dwyl.com/dwyl/learn-tachyons)
 
 ![tachyons-intro-image](https://cloud.githubusercontent.com/assets/194400/25710569/87726714-30e4-11e7-9532-4a447bd61629.png)
 
