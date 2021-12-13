@@ -1,4 +1,4 @@
-# Learn Tachyons [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square)](https://github.com/dwyl/learn-tachyons/issues) [![HitCount](http://hits.dwyl.com/dwyl/learn-tachyons.svg?style=flat-square)](http://hits.dwyl.com/dwyl/learn-tachyons)
+# Learn Tachyons [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square)](https://github.com/dwyl/learn-tachyons/issues) [![HitCount](https://hits.dwyl.com/dwyl/learn-tachyons.svg?style=flat-square)](https://hits.dwyl.com/dwyl/learn-tachyons)
 
 ![tachyons-intro-image](https://cloud.githubusercontent.com/assets/194400/25710569/87726714-30e4-11e7-9532-4a447bd61629.png)
 
@@ -159,7 +159,7 @@ Here's is the CSS for that bootstrap `primary` button:
   border-radius: 4px;
 }
 ```
-Visit: http://getbootstrap.com/css/#buttons
+Visit: https://getbootstrap.com/css/#buttons
 (_open your "dev tools"_) then inspect one of the buttons
 and see for yourself:
 ![image](https://cloud.githubusercontent.com/assets/194400/25717024/190df58a-30f9-11e7-8d14-522a3d3853a1.png "Twitter Bootstrap buttons - click to enlarge")
@@ -262,7 +262,7 @@ You may be thinking:
 + Why use this approach when CSS has been written
 like the bootstrap example for years?
 + Isn't this just like using inline styles?
-([considered by many to be bad practice in CSS](http://stackoverflow.com/questions/2612483/whats-so-bad-about-in-line-css))
+([considered by many to be bad practice in CSS](https://stackoverflow.com/questions/2612483/whats-so-bad-about-in-line-css))
 + Won't I end up _repeating myself_ in the HTML?
 
 Let's have a look at some of the core features
@@ -285,7 +285,7 @@ good design, at least) is **mathsy**,
 **rational** and **pure** —and CSS is design— so it
 follows that there are a bunch of lessons
 we can bring back from FP land into design_." -
-[Jon Gold](http://www.jon.gold/2015/07/functional-css) Front-End Wizard @ AirBnB
+[Jon Gold](https://www.jon.gold/2015/07/functional-css) Front-End Wizard @ AirBnB
 
 ### Composable :musical_score: :notes: :musical_keyboard:
 
@@ -358,7 +358,7 @@ Deleting unused css is hard and time consuming.
 And more often than not - it’s not work people
 are excited to do. So what happens?
 People keep writing more and more css -
-[Adam Morse](http://mrmrs.github.io/writing/2016/03/24/scalable-css/).
+[Adam Morse](https://mrmrs.github.io/writing/2016/03/24/scalable-css/).
 
 
 ## Why Tachyons?
@@ -407,7 +407,7 @@ of inline styles coupled with the power of media queries!
 ### Accessibility
 Tachyons cares about accessibility!
 Not only does the documentation actively encourage accessibility
-by providing things like [accessible colour combinations](http://tachyons.io/docs/themes/skins/),
+by providing things like [accessible colour combinations](https://tachyons.io/docs/themes/skins/),
 but whenever a release includes functionality that can cause
 some accessibility issues, it comes with a :warning:
 [warning to ensure everyone is aware](https://github.com/tachyons-css/tachyons/releases/tag/4.7.0)
@@ -424,7 +424,7 @@ to encourage a more natural workflow when building UIs.
 rather than being controlled by central CSS files.
 This fits my workflow because I usually work
 through a website's design one page at time... -
-[Jason Li](http://notebook.hongkonggong.com/2016/04/21/is-tachyons-the-right-css-framework-for-me/)
+[Jason Li](https://notebook.hongkonggong.com/2016/04/21/is-tachyons-the-right-css-framework-for-me/)
 
 Jason Li illustrates this perfectly:
 
@@ -544,7 +544,7 @@ Check out [this video](https://vimeo.com/174698456)
 for a guide to setting up.
 
 ## Learning the ropes
-The [Tachyons documentation](http://tachyons.io/docs/) is _fantastic_ as
+The [Tachyons documentation](https://tachyons.io/docs/) is _fantastic_ as
 reference material, incredibly well thought out, readable and easy to search
 once you know what you want to do.
 
@@ -552,7 +552,7 @@ But if you just want to play around with tachyons and _get a feel for the
 thinking behind it_, you'll find some well-used options below to get you started.
 
 Once you start to get an understanding for how tachyons works,
-we've found the [table of styles](http://tachyons.io/docs/table-of-styles/)
+we've found the [table of styles](https://tachyons.io/docs/table-of-styles/)
 to be a very useful reference point.
 
 ### Responsive modifiers
@@ -563,42 +563,42 @@ and will set up your media queries as shown [above](#mobile-first-responsive-des
 covers roughly desktop sizes.
 
 ### Typography
-The first place to start when designing is to set a [type scale](http://spencermortensen.com/articles/typographic-scale/)
+The first place to start when designing is to set a [type scale](https://spencermortensen.com/articles/typographic-scale/)
 so that you can _guarantee_ a harmonious progression of font sizes (from 'body
 copy' to 'headlines') across your application or site - tachyons has this
 **built in**!
 
-Tachyons also [includes `.sans-serif` and `.serif`](http://tachyons.io/docs/typography/font-family/) which each have a set of
+Tachyons also [includes `.sans-serif` and `.serif`](https://tachyons.io/docs/typography/font-family/) which each have a set of
 appropriate font family fallbacks.
 
-#### [Font size](http://tachyons.io/docs/typography/scale/)
+#### [Font size](https://tachyons.io/docs/typography/scale/)
 Aside from standard `f1` - `f6` sizes (`f7` was introduced in [tachyons 4.7.0](https://github.com/tachyons-css/tachyons/releases/tag/4.7.0),
 but is not recommended for extensive use), `f-headline` and `f-subheadline` can
 also be used for larger text requirements (usually for print).
 
-#### [Line Height](http://tachyons.io/docs/typography/line-height/)
+#### [Line Height](https://tachyons.io/docs/typography/line-height/)
 An agreeable line height promotes readability and tachyons offers 3 options
 titled according to their most usual uses:
 + `lh-copy` with a line height of 1.5
 + `lh-title` with a line height of 1.25
 + `lh-solid` fixes line height to 1
 
-#### [Font weight and style](http://tachyons.io/docs/typography/font-weight/)
+#### [Font weight and style](https://tachyons.io/docs/typography/font-weight/)
 Aside from `normal` and`b` for _bold_, `fw1` (corresponding to `font-weight: 100;`)
 through to `fw9` (corresponding to `font-weight: 900;`) are available.
 
 `i` can also be used for an italics font style.
 
-#### [Text alignment](http://tachyons.io/docs/typography/text-align/)
+#### [Text alignment](https://tachyons.io/docs/typography/text-align/)
 `tl` aligns text left, `tc` centers it and `tr` aligns it to the right.
 
 ### Layout
 
-Tachyons bases all of its [spacing on a specific ratio](http://tachyons.io/docs/layout/spacing/) that provides a much more
+Tachyons bases all of its [spacing on a specific ratio](https://tachyons.io/docs/layout/spacing/) that provides a much more
 **effortless consistency in spacing across devices**, giving you a much higher
 propensity for things to line up or to at least look harmonious.
 
-#### [Padding and Margins](http://tachyons.io/docs/layout/spacing/)
+#### [Padding and Margins](https://tachyons.io/docs/layout/spacing/)
 Padding and margins both follow the same convention to create their 3 letter
 classnames (e.g. `pa4` or `mb2`):
 + _First character:_ `p` or `m`: each classname starts with one of these to denote 'padding' or
@@ -610,22 +610,22 @@ classnames (e.g. `pa4` or `mb2`):
 `r`  (right), `b` (bottom), `l` (left)
 + _Third character:_ a number from `0` to `7`
 
-#### [Floating](http://tachyons.io/docs/layout/floats/)
+#### [Floating](https://tachyons.io/docs/layout/floats/)
 
 Float left (`fl`), float right (`fr`) and float none (`fn`) are available and
 sets elements to [block-level elements](https://developer.mozilla.org/en/docs/Web/HTML/Block-level_elements).
 
 Because floats are removed from the flow of the page, remember that to force an
 element to contain its floated children (i.e. the elements inside it), you'll
-need to apply a [clearfix](http://tachyons.io/docs/layout/clearfix/) - in tachyons
+need to apply a [clearfix](https://tachyons.io/docs/layout/clearfix/) - in tachyons
 you give the parent element the class `cf`.
 
-#### [Display](http://tachyons.io/docs/layout/display/)
+#### [Display](https://tachyons.io/docs/layout/display/)
 A simple set of classes that follow a similar naming convention to what should now be very familiar to you, e.g. `dib` for `{display : inline-block}` or `dn` for `{display: none}`.
 
 There are also a set of display classes for table and table related display properties, which you can find in detail in the documentation with great examples.
 
-#### [Widths](http://tachyons.io/docs/layout/widths/)
+#### [Widths](https://tachyons.io/docs/layout/widths/)
 Widths are denoted by the `w` class, followed by one of 3 types of _modifiers_:
 + _Numbers scale_ which follows tachyons' powers of two scale mentioned above
   + Starting at `w1` (1rem) to `w5`(16rem)
@@ -640,7 +640,7 @@ Widths are denoted by the `w` class, followed by one of 3 types of _modifiers_:
 **Max widths** are denoted by `mw` and support the _numbers scale_ above
 (e.g. `mw-1` to `mw-10`) as well as `mw-100` (100%) or `mw-none`.
 
-#### [Heights](http://tachyons.io/docs/layout/heights/)
+#### [Heights](https://tachyons.io/docs/layout/heights/)
 Heights are denoted by the `h` class, followed by one of 3 types of _modifiers_:
 + _Numbers scale_ which follows tachyons' powers of two scale mentioned above
   + Starting at `h1` (1rem) to `h5`(16rem)
@@ -651,7 +651,7 @@ Heights are denoted by the `h` class, followed by one of 3 types of _modifiers_:
 + _Values_
   + `auto` and `inherit`
 
-#### [Position](http://tachyons.io/docs/layout/position/)
+#### [Position](https://tachyons.io/docs/layout/position/)
 Elements are naturally statically positioned, but tachyons also support `.absolute` for absolute positioning and `.relative` for relative positioning.
 
 For positioning of the elements, tachyons provides classes for
@@ -664,9 +664,9 @@ For positioning of the elements, tachyons provides classes for
 
 ### Theming
 
-Tachyons comes with a number of [pre-defined colours](http://tachyons.io/docs/themes/skins/) which you can use by themselves to denote _font_ colour or preface with `bg-` to give an element a _background_ colour (e.g. `bg-red`).
+Tachyons comes with a number of [pre-defined colours](https://tachyons.io/docs/themes/skins/) which you can use by themselves to denote _font_ colour or preface with `bg-` to give an element a _background_ colour (e.g. `bg-red`).
 
-#### [Hovers](http://tachyons.io/docs/themes/hovers/)
+#### [Hovers](https://tachyons.io/docs/themes/hovers/)
 There are quite a few hover states available, the basic being:
 + `dim` fades elements or text to 50% opacity on hover
 + `glow` brightens elements or text to 100% opacity on hover
@@ -675,14 +675,14 @@ There are quite a few hover states available, the basic being:
 
 If you're looking for a specific effect, please read the _code_ at the bottom of the docs as there are more!
 
-#### [Background size](http://tachyons.io/docs/themes/background-size/)
+#### [Background size](https://tachyons.io/docs/themes/background-size/)
 Background size allows an image to either:
 + fill its containing element (possibly showing only part of the image if it is bigger than the containing element)
 using `cover`
 + be displayed in its entirety (possibly leaving a portion of the containing element blank if this is wider or taller than the image)
 using `contain`
 
-#### [Borders](http://tachyons.io/docs/themes/borders/)
+#### [Borders](https://tachyons.io/docs/themes/borders/)
 Borders follow the same familiar pattern: `ba` for all 4 borders of the element, `bt` for the top border, `br` for the right border and so on.
 
 The interesting part is that tachyons offers:
@@ -695,7 +695,7 @@ The interesting part is that tachyons offers:
   + `b--dashed`
   + `b--dotted`
 
-#### [Opacity](http://tachyons.io/docs/themes/opacity/)
+#### [Opacity](https://tachyons.io/docs/themes/opacity/)
 Opacity mostly follows a linear pattern `o-` with a number decrementing in multiples of 10: `o-90` (90% opacity), `o-80` (80% opacity) and so on.
 
 In addition, tachyons offers: `o-05`, `o-025` and `o-0`.
@@ -841,8 +841,8 @@ http://127.0.0.1:8000/examples/nav-menu.html
 
 ## Resources
 
-+ [Tachyons.io](http://tachyons.io/)
-+ [Tachyons Table of Styles](http://tachyons.io/docs/table-of-styles/) : http://tachyons.io/docs/table-of-styles/
++ [Tachyons.io](https://tachyons.io/)
++ [Tachyons Table of Styles](https://tachyons.io/docs/table-of-styles/) : https://tachyons.io/docs/table-of-styles/
 + [Tachyons Github Repo](https://github.com/tachyons-css/tachyons/) : https://github.com/tachyons-css/tachyons/
 + [Tachyons Verbose Version](https://github.com/tachyons-css/tachyons-display-verbose) : https://github.com/tachyons-css/tachyons-display-verbose
 + [Setting up Custom Tachyons Build](https://vimeo.com/174698456)
@@ -851,17 +851,17 @@ http://127.0.0.1:8000/examples/nav-menu.html
 
 ### Articles
 
-+ [CSS and Scalability](http://mrmrs.github.io/writing/2016/03/24/scalable-css/)
-+ [Functional Programming, CSS, and your Sanity](http://www.jon.gold/2015/07/functional-css/) : http://www.jon.gold/2015/07/functional-css/
++ [CSS and Scalability](https://mrmrs.github.io/writing/2016/03/24/scalable-css/)
++ [Functional Programming, CSS, and your Sanity](https://www.jon.gold/2015/07/functional-css/) : https://www.jon.gold/2015/07/functional-css/
 + [Rationalizing Functional CSS](https://marcelosomers.com/writing/rationalizing-functional-css/) : https://marcelosomers.com/writing/rationalizing-functional-css/
 + [Building and Shipping Functional CSS](https://blog.colepeters.com/building-and-shipping-functional-css/) : https://blog.colepeters.com/building-and-shipping-functional-css/
-+ [Is Tachyons the right CSS framework for me?](http://notebook.hongkonggong.com/2016/04/21/is-tachyons-the-right-css-framework-for-me/) : http://notebook.hongkonggong.com/2016/04/21/is-tachyons-the-right-css-framework-for-me/
-+ [FCSS](http://eng.wealthfront.com/2013/08/20/functional-css-fcss/) : http://eng.wealthfront.com/2013/08/20/functional-css-fcss/
++ [Is Tachyons the right CSS framework for me?](https://notebook.hongkonggong.com/2016/04/21/is-tachyons-the-right-css-framework-for-me/) : https://notebook.hongkonggong.com/2016/04/21/is-tachyons-the-right-css-framework-for-me/
++ [FCSS](https://eng.wealthfront.com/2013/08/20/functional-css-fcss/) : https://eng.wealthfront.com/2013/08/20/functional-css-fcss/
 
 ### Questions and Discussions
 
 + [How is Tachyons different from inline styles?](https://github.com/tachyons-css/tachyons/issues/12) : https://github.com/tachyons-css/tachyons/issues/12
-+ [What's so bad about inline css?](http://stackoverflow.com/questions/2612483/whats-so-bad-about-in-line-css) : http://stackoverflow.com/questions/2612483/whats-so-bad-about-in-line-css
++ [What's so bad about inline css?](https://stackoverflow.com/questions/2612483/whats-so-bad-about-in-line-css) : https://stackoverflow.com/questions/2612483/whats-so-bad-about-in-line-css
 
 ### Future of Tachyons
 
